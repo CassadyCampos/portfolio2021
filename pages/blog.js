@@ -1,4 +1,4 @@
-const Bio = () => {
+const Blog = () => {
     return (
         <div className="mt-3">
             <p className="display-4 text-center">I'm Ebenezer Scrouge</p>
