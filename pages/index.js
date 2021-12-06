@@ -19,73 +19,73 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4">
-                <div className="flex flex-wrap row text-center p-4">
-                    <div className="d-inline-block row text-left p-4">
-                        <h1 className="">Hi, I'm Cassady Campos</h1>
-                        <div className="">Software Developer</div>
+                <div className="flex flex-wrap row text-left">
+                    <h1 className={styles.title}>
+                        Hi, I'm Cassady Campos
+                    </h1>
+                    <div className={styles.title}>Software Developer</div>
 
-                        <p className={styles.description}>
-                            In love with all things tech and software. I have
-                            been a Software professional for 2+ years. Have a
-                            look around, read one of my cool articles or ponder
-                            at a cool project. Have any questions or want to get
-                            in contact with me? See here!
-                        </p>
-                        <Link href="/">Lets get going!</Link>
+                    <div className={styles.description + " col-md-10"}>
+                        In love with all things tech and software.
+                        Have a look around, check out one of my projects or read an article from my blog, or just play around!
                     </div>
+                    <Link href="#projects">Lets get going!</Link>
                 </div>
 
-                <p className={styles.description}></p>
-
-                <h3>Have a look at some of my posts</h3>
-                <div className={styles.grid}>
-                    <div className="mt-5">
-                        {posts.map((post, index) => (
-                            <Link
-                                href={'/blog/' + post.slug}
-                                passHref
-                                key={index}
-                            >
-                                <div
-                                    className="card mb-3 pointer"
-                                    style={{ maxWidth: '540px' }}
+                <div className="mt-5" id="projects">
+                    <h3>Have a look at some of my posts</h3>
+                    <div className={styles.grid}>
+                        <div className="">
+                            {posts.map((post, index) => (
+                                <Link
+                                    href={'/blog/' + post.slug}
+                                    passHref
+                                    key={index}
                                 >
-                                    <div className="row g-0">
-                                        <div className="col-md-8">
-                                            <div className="card-body">
-                                                <h5 className="card-title">
-                                                    {post.frontMatter.title}
-                                                </h5>
-                                                <p className="card-text">
-                                                    {
+                                    <div
+                                        className="card mb-3 pointer"
+                                        style={{ maxWidth: '540px' }}
+                                    >
+                                        <div className="row g-0">
+                                            <div className="col-md-8">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">
+                                                        {post.frontMatter.title}
+                                                    </h5>
+                                                    <p className="card-text">
+                                                        {
+                                                            post.frontMatter
+                                                                .description
+                                                        }
+                                                    </p>
+                                                    <p className="card-text">
+                                                        <small className="text-muted">
+                                                            {
+                                                                post.frontMatter
+                                                                    .date
+                                                            }
+                                                        </small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-4 m-auto">
+                                                <Image
+                                                    src={
                                                         post.frontMatter
-                                                            .description
+                                                            .thumbnailUrl
                                                     }
-                                                </p>
-                                                <p className="card-text">
-                                                    <small className="text-muted">
-                                                        {post.frontMatter.date}
-                                                    </small>
-                                                </p>
+                                                    className="img-fluid mt-1 rounded-start"
+                                                    alt="thumbnail"
+                                                    width={500}
+                                                    height={400}
+                                                    objectFit="cover"
+                                                />
                                             </div>
                                         </div>
-                                        <div className="col-md-4 m-auto">
-                                            <Image
-                                                src={
-                                                    post.frontMatter
-                                                        .thumbnailUrl
-                                                }
-                                                className="img-fluid mt-1 rounded-start"
-                                                alt="thumbnail"
-                                                width={500}
-                                                height={400}
-                                                objectFit="cover"
-                                            />
-                                        </div>
                                     </div>
-                                </div>
-                            </Link>
-                        ))}
+                                </Link>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </main>
