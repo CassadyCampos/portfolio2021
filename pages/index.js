@@ -19,17 +19,21 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4">
-                <div className="flex flex-wrap row text-left">
+                <div className="d-flex flex-column text-left justify-content-center" style={{ height: 'calc(100vh - 100px)' }}>
                     <h1 className={styles.title}>
                         Hi, I'm Cassady Campos
                     </h1>
                     <div className={styles.title}>Software Developer</div>
 
-                    <div className={styles.description + " col-md-10"}>
+                    <div className={styles.description + " col-10 mt-2"}>
                         In love with all things tech and software.
                         Have a look around, check out one of my projects or read an article from my blog, or just play around!
                     </div>
-                    <Link href="#projects">Lets get going!</Link>
+
+                </div>
+                <div width="100px">
+                <Link href="#projects">Lets get going!</Link>
+                    <img className={styles.icon}src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 </div>
 
                 <div className="mt-5" id="projects">
@@ -47,7 +51,7 @@ export default function Home({ posts }) {
                                         style={{ maxWidth: '540px' }}
                                     >
                                         <div className="row g-0">
-                                            <div className="col-md-8">
+                                            <div className="col-8">
                                                 <div className="card-body">
                                                     <h5 className="card-title">
                                                         {post.frontMatter.title}
@@ -68,7 +72,7 @@ export default function Home({ posts }) {
                                                     </p>
                                                 </div>
                                             </div>
-                                            <div className="col-md-4 m-auto">
+                                            <div className="col-4 m-auto">
                                                 <Image
                                                     src={
                                                         post.frontMatter
