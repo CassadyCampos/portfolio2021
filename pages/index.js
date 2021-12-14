@@ -19,7 +19,7 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4">
-                <div className="d-flex flex-column text-left justify-content-center" style={{ height: 'calc(100vh - 100px)' }}>
+                <div id="home" className="d-flex flex-column text-left justify-content-center" style={{ height: 'calc(100vh - 100px)' }}>
                     <h1 className={styles.title}>
                         Hi, I'm Cassady Campos
                     </h1>
@@ -31,12 +31,14 @@ export default function Home({ posts }) {
                     </div>
 
                 </div>
-                <div width="100px">
+                <div className={styles.spacer}>
                 <Link href="#projects">Lets get going!</Link>
                     <img className={styles.icon}src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 </div>
 
-                <div className="mt-5" id="articles">
+                <div className={styles.spacer}></div>
+
+                <div id="articles">
                     <h3>Have a look at some of my posts</h3>
                     <div className={styles.grid}>
                         <div className="">
@@ -93,9 +95,13 @@ export default function Home({ posts }) {
                     </div>
                 </div>
                                             
+                <div className={styles.spacer}></div>
+
                 <div id="projects">
                     <h1>projects placed here</h1>
                 </div>
+                <div className={styles.spacer}></div>
+
                 <div id="contact">maybe contact form placed here</div>
             </main>
 
