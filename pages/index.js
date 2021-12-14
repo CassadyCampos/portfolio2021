@@ -36,7 +36,7 @@ export default function Home({ posts }) {
                     <img className={styles.icon}src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                 </div>
 
-                <div className="mt-5" id="projects">
+                <div className="mt-5" id="articles">
                     <h3>Have a look at some of my posts</h3>
                     <div className={styles.grid}>
                         <div className="">
@@ -92,6 +92,11 @@ export default function Home({ posts }) {
                         </div>
                     </div>
                 </div>
+                                            
+                <div id="projects">
+                    <h1>projects placed here</h1>
+                </div>
+                <div id="contact">maybe contact form placed here</div>
             </main>
 
             <footer className={styles.footer}>
