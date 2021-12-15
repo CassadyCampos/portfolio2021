@@ -20,14 +20,15 @@ export default function Home({ posts }) {
 
             <main className="mt-4">
                 <div id="home" className="d-flex flex-column text-left justify-content-center" style={{ height: 'calc(100vh - 100px)' }}>
-                    <h1 className={styles.title}>
+                    <h1 className={styles.title + "text-nowrap"}>
                         Hi, I'm Cassady Campos
                     </h1>
-                    <div className={styles.title}>Software Developer</div>
+                    <div className={styles.title + "text-nowrap"}>Software Developer</div>
 
                     <div className={styles.description + " col-10 mt-2"}>
                         In love with all things tech and software.
-                        Have a look around, check out one of my projects or read an article from my blog, or just play around!
+                        Have a look around, check out one of my projects 
+                        or read an article from my blog!
                     </div>
 
                 </div>
@@ -40,8 +41,7 @@ export default function Home({ posts }) {
 
                 <div id="articles">
                     <h3>Have a look at some of my posts</h3>
-                    <div className={styles.grid}>
-                        <div className="">
+                    <div className={"d-flex flex-wrap"}>
                             {posts.map((post, index) => (
                                 <Link
                                     href={'/blog/' + post.slug}
@@ -49,9 +49,7 @@ export default function Home({ posts }) {
                                     key={index}
                                 >
                                     <div
-                                        className="card mb-3 pointer"
-                                        style={{ maxWidth: '540px' }}
-                                    >
+                                        className="card mb-3 pointer"                                    >
                                         <div className="row g-0">
                                             <div className="col-8">
                                                 <div className="card-body">
@@ -91,7 +89,6 @@ export default function Home({ posts }) {
                                     </div>
                                 </Link>
                             ))}
-                        </div>
                     </div>
                 </div>
                                             

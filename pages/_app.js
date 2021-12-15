@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
 
             <div className="container-fluid">
                 <div className="row">
-                  <div className="col-3 d-flex justify-content-center"
+                  <div className="col-2 d-flex justify-content-center"
                   style={{marginTop: "15rem"}}>
                   <Nav />
 
