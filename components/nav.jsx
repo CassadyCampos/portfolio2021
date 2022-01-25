@@ -1,22 +1,43 @@
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 const Nav = () => {
     return (
-        <div className="position-fixed">
-            <nav className="nav flex-column p-3 ">
-                <Link className="nav-item" href="#home" passHref>
-                    <a className="nav-link lead my-auto">Home</a>
-                </Link>
-                <Link className="nav-item" href="#articles" passHref>
-                    <a className="nav-link lead my-auto">Articles</a>
-                </Link>
-                <Link className="nav-item" href="#projects" passHref>
-                    <a className="nav-link lead my-auto">Projects</a>
-                </Link>
-                <Link className="nav-item" href="#contact" passHref>
-                    <a className="nav-link lead my-auto">Contact</a>
-                </Link>
-
+        <div className="">
+            <nav className="p-4 navbar navbar-expand-sm navbar-light bg-light">
+                <a className={styles.baseFont + ' navbar-brand'} href={'/'}>
+                    Cassady Campos
+                </a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item active">
+                            <a className="nav-link" href={'/now'}>
+                                Now <span className="sr-only"></span>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">
+                                Posts
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#">
+                                Projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     );

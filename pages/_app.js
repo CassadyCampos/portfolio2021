@@ -18,17 +18,11 @@ function MyApp({ Component, pageProps }) {
                 ></link>
             </Head>
 
-            <div className="container-fluid">
-                <div className="row">
-                  <div className="col-2 d-flex justify-content-center"
-                  style={{marginTop: "15rem"}}>
+            <div className="">
                   <Nav />
-
-                  </div>
-                    <main className="col-8">
+                    <main className="">
                         <Component {...pageProps} />
                     </main>
-                </div>
             </div>
         </>
     );
