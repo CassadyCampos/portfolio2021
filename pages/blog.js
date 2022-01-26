@@ -7,4 +7,4 @@ const Blog = () => {
     )
 }
 
-export default Bio;
+export default Blog;

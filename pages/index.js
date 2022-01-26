@@ -47,7 +47,7 @@ export default function Home({ posts }) {
                 <div className={styles.baseFont + ' text-center p-3'}>
                     © 2020 Copyright:
                     <a className="text-dark" href="h#">
-                        CCS INC
+                        Cassady
                     </a>
                 </div>
                 {/* <!-- Copyright --> */}

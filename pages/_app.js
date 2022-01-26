@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Nav from '../components/nav';
-
+// import styles from "../styles/global.css";
 function MyApp({ Component, pageProps }) {
     return (
         <>
@@ -12,15 +12,21 @@ function MyApp({ Component, pageProps }) {
                     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
                     crossorigin="anonymous"
                 ></link>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossorigin
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap"
                     rel="stylesheet"
-                    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-                ></link>
+                />
             </Head>
 
             <div className="">
                   <Nav />
-                    <main className="">
+                    <main>
                         <Component {...pageProps} />
                     </main>
             </div>
