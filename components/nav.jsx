@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 const Nav = () => {
     return (
         <div className="">
-            <nav className="p-4 navbar navbar-expand-sm navbar-light bg-light">
+            <nav className="p-3 navbar navbar-expand-sm navbar-light bg-light">
                 <a className={styles.baseFont + ' navbar-brand'} href={'/'}>
                     Cassady Campos
                 </a>

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Nav from '../components/nav';
-// import styles from "../styles/global.css";
+import styles from "../styles/global.css";
 function MyApp({ Component, pageProps }) {
     return (
         <>
@@ -25,10 +25,14 @@ function MyApp({ Component, pageProps }) {
             </Head>
 
             <div className="">
-                  <Nav />
-                    <main>
-                        <Component {...pageProps} />
-                    </main>
+                <Nav />
+                <main>
+                    <div className={'d-flex flex-wrap justify-content-center'}>
+                        <div className={'col-md-8'}>
+                            <Component {...pageProps} />
+                        </div>
+                    </div>
+                </main>
             </div>
         </>
     );

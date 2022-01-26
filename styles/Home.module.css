@@ -2,3 +2,11 @@
     font-family: 'Arbutus Slab', serif;
     color: #373737;
 }
+
+.baseText { 
+    font-family: 'Arbutus Slab', serif;
+    color: #373737;
+    line-height: 2.2rem;
+    font-size: 1.24rem;
+}
+
