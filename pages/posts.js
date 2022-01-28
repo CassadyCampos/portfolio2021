@@ -4,21 +4,22 @@ import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
 const Posts = ({ posts }) => {
     return (
         <div>
-            <h1 className="display-4 py-5 text-center">Posts</h1>
+            <h1 className={styles.baseFont + " display-4 py-5 text-center"}>Posts</h1>
             <div>
                 {posts.map((post, index) => (
                     <Link href={'/blog/' + post.slug} passHref key={index}
                     className="m-5"
                     >
                         <div className="m-5"> 
-                            <div>
+                            <div class={styles.baseText}>
                                 {post.frontMatter.title}
                             </div>
-                            <div>
+                            <div class={styles.subText}>
                                 {post.frontMatter.date}
                             </div>
                         </div>
