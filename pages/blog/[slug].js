@@ -40,7 +40,6 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
     const { data: frontMatter, content } = matter(markdownWithMeta)
     const mdxSource = await serialize(content)
-    console.log("tester", slug)
     return {
         props: {
             frontMatter,

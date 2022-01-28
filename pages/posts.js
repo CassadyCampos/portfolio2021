@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css';
 const Posts = ({ posts }) => {
     return (
         <div>
-            <h1 className={styles.baseFont + " display-4 py-5 text-center"}>Posts</h1>
+            <h1 className={styles.baseFont + " display-4 py-5 text-center"}>posts</h1>
             <div>
                 {posts.map((post, index) => (
                     <Link href={'/blog/' + post.slug} passHref key={index}
@@ -87,8 +87,6 @@ export const getStaticProps = async () => {
             slug: filename.split('.')[0],
         };
     });
-
-    console.log(posts);
 
     return {
         props: {
