@@ -16,10 +16,10 @@ const Posts = ({ posts }) => {
                     className="m-5"
                     >
                         <div className="m-5"> 
-                            <div class={styles.baseText}>
+                            <div className={styles.baseText}>
                                 {post.frontMatter.title}
                             </div>
-                            <div class={styles.subText}>
+                            <div classNamenpm={styles.subText}>
                                 {post.frontMatter.date}
                             </div>
                         </div>
