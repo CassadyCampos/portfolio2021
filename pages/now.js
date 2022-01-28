@@ -14,8 +14,8 @@ const NowPage = () => {
             </div>
             <br/>
 
-            <div className={styles.baseText}>Personally, at the moment I'm really into Web3 and decentralized web apps (DAPPS) Building websites
-                that allow users to connect to and interact with blockchains (Ethereum mostly) through smart-contracts!
+            <div className={styles.baseText}>Personally, at the moment I'm really into Web3 and decentralized web apps (DAPPS). I'm also looking to get into
+            open source projects, however I'm still looking to find the right project.
             </div>
             <br/>
 

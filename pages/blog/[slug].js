@@ -5,12 +5,13 @@ import path from 'path'
 import matter from 'gray-matter'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import Button from '../../components/Button.jsx'
+import styles from '../../styles/Home.module.css'
 
 const PostPage = ({ frontMatter: { title }, mdxSource }) => {
     return (
         <div className="mt-4">
-            <h1>{ title }</h1>
-            <MDXRemote {...mdxSource} components={{ Button, SyntaxHighlighter }} />
+            <h1 className={styles.baseFont + ' py-5 display-4 text-center'}>{ title }</h1>
+            <MDXRemote className={styles.baseFont}{...mdxSource} components={{ Button, SyntaxHighlighter }} />
         </div>
     )
 }
