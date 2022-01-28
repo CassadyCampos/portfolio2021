@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-
+import image from "../public/profile.jpeg"
 export default function Home({ posts }) {
     return (
         <div>
@@ -19,6 +19,14 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4">
+            {/* <Image
+                                            src={image}
+                                            className="img-fluid mt-1 rounded"
+                                            alt="thumbnail"
+                                            // width={500}
+                                            // height={400}
+                                            objectFit="cover"
+                                        /> */}
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
@@ -32,7 +40,7 @@ export default function Home({ posts }) {
                 </div>
             </main>
 
-            <footer class="bg-light text-center text-lg-start">
+            <footer className="bg-light text-center text-lg-start">
                 {/* <!-- Copyright --> */}
                 <div className={styles.baseFont + ' text-center p-3'}>
                     © 2020 Copyright:

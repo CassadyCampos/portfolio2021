@@ -9,9 +9,13 @@ import styles from '../../styles/Home.module.css'
 
 const PostPage = ({ frontMatter: { title }, mdxSource }) => {
     return (
-        <div className="mt-4">
-            <h1 className={styles.baseFont + ' py-5 display-4 text-center'}>{ title }</h1>
+        <div className="mt-4 d-flex flex-wrap justify-content-center">
+            <h1 className={styles.baseFont + ' col-10 py-5 display-4 text-center'}>{ title }</h1>
+            <div className={'col-10'}>
             <MDXRemote className={styles.baseFont}{...mdxSource} components={{ Button, SyntaxHighlighter }} />
+
+            </div>
+
         </div>
     )
 }
