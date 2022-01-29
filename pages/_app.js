@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Nav from '../components/nav';
-import styles from "../styles/global.css";
+import Footer from '../components/Footer';
+import styles from '../styles/global.css';
 function MyApp({ Component, pageProps }) {
     return (
         <>
@@ -31,6 +32,8 @@ function MyApp({ Component, pageProps }) {
                         <div className={'col-8'}>
                             <Component {...pageProps} />
                         </div>
+
+                        <Footer />
                     </div>
                 </main>
             </div>

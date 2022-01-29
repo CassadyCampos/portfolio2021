@@ -5,7 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import image from "../public/profile.jpeg"
+import cassady from "../public/cassady.jpeg"
+
 export default function Home({ posts }) {
     return (
         <div>
@@ -18,20 +19,20 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="mt-4">
-            {/* <Image
-                                            src={image}
-                                            className="img-fluid mt-1 rounded"
+            <main className="mt-4 d-flex">
+                            {/* <Image
+                                            src={cassady}
+                                            className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                             alt="thumbnail"
-                                            // width={500}
-                                            // height={400}
+                                            width={540}
+                                            height={580}
                                             objectFit="cover"
                                         /> */}
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
                     style={{ height: 'calc(100vh - 100px)' }}
-                >
+                    >
                     <div className={styles.baseText + ' text-center'}>
                         In love with all things tech and software! Have a look
                         around, check out one of my projects or read one of my
@@ -40,16 +41,15 @@ export default function Home({ posts }) {
                 </div>
             </main>
 
-            <footer className="bg-light text-center text-lg-start">
-                {/* <!-- Copyright --> */}
+            {/* <footer className="bg-light text-center text-lg-start">
                 <div className={styles.baseFont + ' text-center p-3'}>
                     © 2020 Copyright:
                     <a className="text-dark" href="h#">
                         Cassady
                     </a>
                 </div>
-                {/* <!-- Copyright --> */}
-            </footer>
+            </footer> 
+            */}
         </div>
     );
 }
