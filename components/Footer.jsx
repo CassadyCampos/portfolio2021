@@ -8,7 +8,7 @@ const Footer = () => {
         {/* <!-- Copyright --> */}
         <div
             className={
-                styles.baseFont + ' text-center p-3'
+                styles.subText + ' text-center p-3'
             }
         >
             © 2020 Copyright:
