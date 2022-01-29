@@ -6,12 +6,21 @@ import matter from 'gray-matter'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import Button from '../../components/Button.jsx'
 import styles from '../../styles/Home.module.css'
+import Image from 'next/image';
 
-const PostPage = ({ frontMatter: { title }, mdxSource }) => {
+const PostPage = ({ frontMatter: { title, thumbnailUrl }, mdxSource }) => {
     return (
         <div className="mt-4 d-flex flex-wrap justify-content-center">
             <h1 className={styles.baseFont + ' col-10 py-5 display-4 text-center'}>{ title }</h1>
             <div className={'col-10'}>
+                                            <Image
+                                            src={thumbnailUrl}
+                                            className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                            alt="thumbnail"
+                                            width={540}
+                                            height={580}
+                                            objectFit="cover"
+                                        />
             <MDXRemote className={styles.baseFont}{...mdxSource} components={{ Button, SyntaxHighlighter }} />
 
             </div>

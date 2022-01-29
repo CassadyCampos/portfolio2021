@@ -6,6 +6,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import cassady from "../public/cassady.jpeg"
+import 'animate.css'
 
 export default function Home({ posts }) {
     return (
@@ -20,36 +21,27 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4 d-flex">
-                            {/* <Image
-                                            src={cassady}
-                                            className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                                            alt="thumbnail"
-                                            width={540}
-                                            height={580}
-                                            objectFit="cover"
-                                        /> */}
+                        {/* <Image
+                                        src={cassady}
+                                        className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                        alt="thumbnail"
+                                        width={540}
+                                        height={580}
+                                        objectFit="cover"
+                                    /> */}
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
                     style={{ height: 'calc(100vh - 100px)' }}
                     >
-                    <div className={styles.baseText + ' text-center'}>
+                    <div className={styles.baseText + 
+                        ' animate__animated animate__fadeInRight text text-center'}>
                         In love with all things tech and software! Have a look
                         around, check out one of my projects or read one of my
                         posts!
                     </div>
                 </div>
             </main>
-
-            {/* <footer className="bg-light text-center text-lg-start">
-                <div className={styles.baseFont + ' text-center p-3'}>
-                    © 2020 Copyright:
-                    <a className="text-dark" href="h#">
-                        Cassady
-                    </a>
-                </div>
-            </footer> 
-            */}
         </div>
     );
 }

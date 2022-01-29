@@ -5,21 +5,22 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import 'animate.css'
 
 const Posts = ({ posts }) => {
     return (
         <div>
-            <h1 className={styles.baseFont + " display-4 py-5 text-center"}>posts</h1>
+            <h1 className={styles.baseFont + " display-4 py-5 text-center animate__animated animate__fadeInRightBig animate__slower"}>posts</h1>
             <div>
                 {posts.map((post, index) => (
                     <Link href={'/blog/' + post.slug} passHref key={index}
                     className="m-5"
                     >
                         <div className="m-5"> 
-                            <div className={styles.baseText}>
+                            <div className={styles.baseText + ' ' + styles.fadeIn + ' animate__animated animate__fadeInRightBig animate__slow'}>
                                 {post.frontMatter.title}
                             </div>
-                            <div classNamenpm={styles.subText}>
+                            <div className={styles.subText + '  animate__animated animate__fadeInRightBig animate__slower'}>
                                 {post.frontMatter.date}
                             </div>
                         </div>

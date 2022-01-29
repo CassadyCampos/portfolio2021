@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Nav from '../components/nav';
 import Footer from '../components/Footer';
 import styles from '../styles/global.css';
+
 function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Next and MDX Blog</title>
+                <title>Cassady Campos Portfolio</title>
                 <link
                     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
                     rel="stylesheet"
@@ -27,15 +28,15 @@ function MyApp({ Component, pageProps }) {
 
             <div className="">
                 <Nav />
-                <main>
+                <main className="vh-100">
                     <div className={'d-flex flex-wrap justify-content-center'}>
                         <div className={'col-8'}>
                             <Component {...pageProps} />
                         </div>
 
-                        <Footer />
                     </div>
                 </main>
+                <Footer />
             </div>
         </>
     );
