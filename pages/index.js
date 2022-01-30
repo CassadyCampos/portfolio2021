@@ -5,8 +5,9 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import cassady from '../public/cassady.jpeg';
 import 'animate.css';
+import github from '../public/github.png';
+import linkedIn from '../public/linkedIn.png';
 
 export default function Home({ posts }) {
     return (
@@ -21,14 +22,6 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4 d-flex">
-                {/* <Image
-                                        src={cassady}
-                                        className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                                        alt="thumbnail"
-                                        width={540}
-                                        height={580}
-                                        objectFit="cover"
-                                    /> */}
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
@@ -58,7 +51,32 @@ export default function Home({ posts }) {
                         around, check out one of my projects or read one of my
                         posts!
                     </div>
-
+                    <div className="d-flex">
+                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                        <Image
+                            className=""
+                            src={github}
+                            // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                            alt="thumbnail"
+                            width={48}
+                            height={48}
+                            // objectFit="cover"
+                        />
+     
+                    </div>
+                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-2s">
+                    <Image
+                            className=""
+                            src={linkedIn}
+                            // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                            alt="thumbnail"
+                            width={48}
+                            height={48}
+                            // objectFit="cover"
+                        />
+                    </div>
+                    </div>
+                    
                 </div>
             </main>
         </div>
