@@ -5,8 +5,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import cassady from "../public/cassady.jpeg"
-import 'animate.css'
+import cassady from '../public/cassady.jpeg';
+import 'animate.css';
 
 export default function Home({ posts }) {
     return (
@@ -21,7 +21,7 @@ export default function Home({ posts }) {
             </Head>
 
             <main className="mt-4 d-flex">
-                        {/* <Image
+                {/* <Image
                                         src={cassady}
                                         className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                         alt="thumbnail"
@@ -32,14 +32,33 @@ export default function Home({ posts }) {
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
-                    style={{ height: 'calc(100vh - 100px)' }}
+                    style={{ height: 'calc(85vh - 150px)' }}
+                >
+                    <h1
+                        className={
+                            ' animate__animated animate__fadeInRightBig animate__slow '
+                        }
                     >
-                    <div className={styles.baseText + 
-                        ' animate__animated animate__fadeInRight text text-center'}>
+                        Software Developer
+                    </h1>
+                    <div
+                        className={
+                            styles.subTitle +
+                            ' animate__animated animate__fadeInRight animate__slower'
+                        }
+                    >
+                        Calgary, AB, Canada
+                    </div>
+                    <div
+                        className={
+                            ' animate__animated animate__fadeInRightBig animate__slower text mt-3'
+                        }
+                    >
                         In love with all things tech and software! Have a look
                         around, check out one of my projects or read one of my
                         posts!
                     </div>
+
                 </div>
             </main>
         </div>

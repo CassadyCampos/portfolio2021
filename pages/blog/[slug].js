@@ -11,7 +11,7 @@ import Image from 'next/image';
 const PostPage = ({ frontMatter: { title, thumbnailUrl }, mdxSource }) => {
     return (
         <div className="mt-4 d-flex flex-wrap justify-content-center">
-            <h1 className={styles.baseFont + ' col-10 py-5 display-4 text-center'}>{ title }</h1>
+            <h1 className={styles.baseFont + " display-4 py-4 text-center animate__animated animate__fadeInRightBig animate__slower"}>{title}</h1>
             <div className={'col-10'}>
                                             <Image
                                             src={thumbnailUrl}

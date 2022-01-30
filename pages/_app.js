@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
             <div className="">
                 <Nav />
                 <main className="vh-100">
-                    <div className={'d-flex flex-wrap justify-content-center'}>
+                    <div className={'mt-5 d-flex flex-wrap justify-content-center'}>
                         <div className={'col-8'}>
                             <Component {...pageProps} />
                         </div>

@@ -1,14 +1,15 @@
 import styles from "../styles/Home.module.css";
+import 'animate.css'
 
-const NowPage = () => {
+const Now = () => {
     return (
-        <div className="">
-            <h1 className={styles.baseFont + " py-5 display-4 text-center"}>now</h1>
+        <div>
+            <h1 className={styles.baseFont + " display-4 py-4 text-center animate__animated animate__fadeInRightBig animate__slower"}>now</h1>
             
             <div className={styles.baseText}>
                 {"In 2021 I graduated studying Computer Science from the Univerisity of Lethbridge, AB, Canada."}
             </div>
-            <br/>
+        <br/>
 
             <div className={styles.baseText}>
                 {"Since then, I have been working as a Full-Stack Software Engineer at Arcurve. Building a CRM web app for prominent figures in the Oil and Energy sector. Monitoring logistics of fuel deliveries, products, and retail gas locations across the United States and Canada."}
@@ -28,4 +29,4 @@ const NowPage = () => {
     )
 }
 
-export default NowPage
+export default Now
