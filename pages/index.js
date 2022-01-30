@@ -21,7 +21,7 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="mt-4 d-flex">
+            <main className="d-flex">
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
@@ -51,8 +51,8 @@ export default function Home({ posts }) {
                         around, check out one of my projects or read one of my
                         posts!
                     </div>
-                    <div className="d-flex">
-                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                    <div className="d-flex mt-4">
+                    <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
                         <Image
                             className=""
                             src={github}
@@ -64,7 +64,7 @@ export default function Home({ posts }) {
                         />
      
                     </div>
-                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                    <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
                     <Image
                             className=""
                             src={linkedIn}
