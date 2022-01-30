@@ -64,7 +64,7 @@ export default function Home({ posts }) {
                         />
      
                     </div>
-                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-2s">
+                    <div className="col-1 mt-4 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
                     <Image
                             className=""
                             src={linkedIn}
