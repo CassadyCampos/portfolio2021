@@ -3,8 +3,8 @@ import 'animate.css'
 
 const Now = () => {
     return (
-        <div>
-            <h1 className={styles.baseFont + " display-4 py-4 text-center animate__animated animate__fadeInRightBig animate__slower"}>now</h1>
+        <div className={' animate__animated animate__slideInUp'}>
+            <h1 className={styles.baseFont + " display-4 py-4 text-center"}>now</h1>
             
             <div className={styles.baseText}>
                 {"In 2021 I graduated studying Computer Science from the Univerisity of Lethbridge, AB, Canada."}
