@@ -7,14 +7,15 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import Button from '../../components/Button.jsx';
 import styles from '../../styles/Blog.module.css';
 import Image from 'next/image';
+import 'animate.css'
 
-const PostPage = ({ frontMatter: { title, thumbnailUrl }, mdxSource }) => {
+const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => {
     return (
         <div className="mt-4 d-flex flex-wrap justify-content-center">
             <h1
                 className={
                     styles.baseFont +
-                    ' display-4 py-4 text-center'
+                    ' display-4 py-4 text-center animate__animated animate__slideInUp'
                 }
             >
                 {title}
@@ -22,19 +23,22 @@ const PostPage = ({ frontMatter: { title, thumbnailUrl }, mdxSource }) => {
             <div className={'col-10'}>
                 <Image
                     src={thumbnailUrl}
-                    className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                    className="col-12 img-fluid mt-1 rounded animate__animated animate__slideInUp"
                     alt="thumbnail"
                     width={1000}
                     height={360}
                     objectFit="cover"
                 />
-                <div className={styles.dateText}>December 12, 2021</div>
+                <div className={styles.dateText + ' animate__animated animate__slideInUp'}>{date}</div>
                 <br/>
+                <div className={' animate__animated animate__slideInUp'}>
                 <MDXRemote
-                    className={styles.baseFont}
+                    
                     {...mdxSource}
                     components={{ Button, SyntaxHighlighter }}
                 />
+                </div>
+
             </div>
         </div>
     );

@@ -8,8 +8,11 @@ import Link from 'next/link';
 import 'animate.css';
 import github from '../public/github.png';
 import linkedIn from '../public/linkedIn.png';
+import React, { useState } from 'react';
 
 export default function Home({ posts }) {
+    const [open, set] = useState(true);
+
     return (
         <div>
             <Head>
@@ -52,31 +55,29 @@ export default function Home({ posts }) {
                         posts!
                     </div>
                     <div className="d-flex mt-4">
-                    <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
-                        <Image
-                            className=""
-                            src={github}
-                            // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                            alt="thumbnail"
-                            width={48}
-                            height={48}
-                            // objectFit="cover"
-                        />
-     
+                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                            <Image
+                                className=""
+                                src={github}
+                                // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                alt="thumbnail"
+                                width={48}
+                                height={48}
+                                // objectFit="cover"
+                            />
+                        </div>
+                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                            <Image
+                                className=""
+                                src={linkedIn}
+                                // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                alt="thumbnail"
+                                width={48}
+                                height={48}
+                                // objectFit="cover"
+                            />
+                        </div>
                     </div>
-                    <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
-                    <Image
-                            className=""
-                            src={linkedIn}
-                            // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                            alt="thumbnail"
-                            width={48}
-                            height={48}
-                            // objectFit="cover"
-                        />
-                    </div>
-                    </div>
-                    
                 </div>
             </main>
         </div>
