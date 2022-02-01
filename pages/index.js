@@ -56,6 +56,7 @@ export default function Home({ posts }) {
                     </div>
                     <div className="d-flex mt-4">
                         <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
+                            <Link href={'https://github.com/CassadyCampos'}>
                             <Image
                                 className=""
                                 src={github}
@@ -65,6 +66,7 @@ export default function Home({ posts }) {
                                 height={48}
                                 // objectFit="cover"
                             />
+                            </Link>
                         </div>
                         <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
                             <Image
