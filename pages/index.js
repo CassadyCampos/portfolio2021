@@ -32,7 +32,7 @@ export default function Home({ posts }) {
                 >
                     <h1
                         className={
-                            ' animate__animated animate__fadeInRightBig animate__slow '
+                            ' animate__animated animate__fadeInRightBig animate__slow'
                         }
                     >
                         Software Developer
@@ -55,29 +55,39 @@ export default function Home({ posts }) {
                         posts!
                     </div>
                     <div className="d-flex mt-4">
-                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
-                            <Link href={'https://github.com/CassadyCampos'}>
-                            <Image
-                                className=""
-                                src={github}
-                                // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                                alt="thumbnail"
-                                width={48}
-                                height={48}
-                                // objectFit="cover"
-                            />
-                            </Link>
+                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slow animate__delay-1s">
+                            <a
+                                href={'https://github.com/CassadyCampos'}
+                                target="_blank"
+                            >
+                                <Image
+                                    className=""
+                                    src={github}
+                                    // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                    alt="thumbnail"
+                                    width={48}
+                                    height={48}
+                                    // objectFit="cover"
+                                />
+                            </a>
                         </div>
-                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slower animate__delay-1s">
-                            <Image
-                                className=""
-                                src={linkedIn}
-                                // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
-                                alt="thumbnail"
-                                width={48}
-                                height={48}
-                                // objectFit="cover"
-                            />
+                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slow animate__delay-1s">
+                            <a
+                                href={
+                                    'https://www.linkedin.com/in/cassady-campos-2915531a9/'
+                                }
+                                target="_blank"
+                            >
+                                <Image
+                                    className=""
+                                    src={linkedIn}
+                                    // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
+                                    alt="thumbnail"
+                                    width={48}
+                                    height={48}
+                                    // objectFit="cover"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
