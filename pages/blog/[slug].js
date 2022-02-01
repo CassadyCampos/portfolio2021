@@ -20,10 +20,10 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
             >
                 {title}
             </h1>
-            <div className={'col-10'}>
+            <div>
                 <Image
                     src={thumbnailUrl}
-                    className="col-12 img-fluid mt-1 rounded animate__animated animate__slideInUp"
+                    className="img-fluid mt-1 rounded animate__animated animate__slideInUp"
                     alt="thumbnail"
                     width={1000}
                     height={360}
