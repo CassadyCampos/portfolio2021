@@ -9,6 +9,7 @@ import 'animate.css';
 import github from '../public/github.png';
 import linkedIn from '../public/linkedIn.png';
 import React, { useState } from 'react';
+import Angular from '../public/devicon-master/icons/angularjs/angularjs-original.svg'
 
 export default function Home({ posts }) {
     const [open, set] = useState(true);
@@ -72,7 +73,7 @@ export default function Home({ posts }) {
                                 />
                             </a>
                         </div>
-                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slow animate__delay-1s">
+                        <div className="col-1">
                             <a
                                 href={
                                     'https://www.linkedin.com/in/cassady-campos-2915531a9/'
