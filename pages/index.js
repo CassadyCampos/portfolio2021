@@ -59,6 +59,7 @@ export default function Home({ posts }) {
                             <a
                                 href={'https://github.com/CassadyCampos'}
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Image
                                     className=""
@@ -77,6 +78,7 @@ export default function Home({ posts }) {
                                     'https://www.linkedin.com/in/cassady-campos-2915531a9/'
                                 }
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <Image
                                     className=""
