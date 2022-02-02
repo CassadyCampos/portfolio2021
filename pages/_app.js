@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
                     href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap"
                     rel="stylesheet"
                 />
+                <script src="https://use.fontawesome.com/4aa3265b21.js"></script>
             </Head>
 
             <div className="">
@@ -33,7 +34,6 @@ function MyApp({ Component, pageProps }) {
                         <div className={'col-8 py-4'}>
                             <Component {...pageProps} />
                         </div>
-
                     </div>
                 </main>
                 <Footer />
