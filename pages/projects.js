@@ -1,5 +1,8 @@
 import styles from '../styles/projects.module.scss';
 import 'animate.css';
+import { ReactElement } from 'react';
+import { faTwitter, faInstagram, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Projects = () => {
     return (
@@ -12,11 +15,14 @@ const Projects = () => {
             >
                 projects
             </h1>
+            {/* <FontAwesomeIcon icon={faTwitter}/>
+            <FontAwesomeIcon icon={faInstagram}/> */}
+
             <div className={styles.container}>
                 <div className={styles.card}>
-                    <h2>North</h2>
+                    <h2>Defi Fund Pool</h2>
                     <i className="fas fa-arrow-right"></i>
-                    <p>a lonely trip.</p>
+                    <p>Decentralized pool funding</p>
                     <div className={styles.pic}></div>
                     <ul>
                         <li></li>
@@ -44,10 +50,10 @@ const Projects = () => {
                         <li></li>
                     </ul>
                     <div className={styles.social}>
-                        <i className="fab fa-facebook-f"></i>
-                        <i className="fab fa-twitter"></i>
-                        <i className="fab fa-instagram"></i>
-                        <i className="fab fa-github"></i>
+                        <FontAwesomeIcon className={styles.icon} icon={faTwitter}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faInstagram}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faGithub}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faLinkedin}/>
                     </div>
                     <button></button>
                 </div>

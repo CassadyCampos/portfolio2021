@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Nav from '../components/nav';
 import Footer from '../components/Footer';
 import styles from '../styles/global.css';
+// config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
     return (
