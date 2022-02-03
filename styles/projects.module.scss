@@ -18,8 +18,8 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
 
 // shrink and hide icons initially
 .icon {
-  opacity: 1;
-  font-size: 16rem;
+  opacity: 0;
+  font-size: 18px;
   color: #fff;
   will-change: transform;
   -webkit-transform: scale(0.1);
