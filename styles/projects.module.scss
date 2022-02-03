@@ -1,4 +1,3 @@
-// @import '../public/blockchain.jpeg';
 .baseFont {
     font-family: 'Arbutus Slab', serif;
     color: #373737;
@@ -17,9 +16,10 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
 //   box-sizing: border-box;
 // }
 
+// shrink and hide icons initially
 .icon {
-  opacity: 0;
-  font-size: 18px;
+  opacity: 1;
+  font-size: 16rem;
   color: #fff;
   will-change: transform;
   -webkit-transform: scale(0.1);
@@ -28,9 +28,11 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
   transition: all 0.2s ease;
 }
 
-// h2{
-//   pointer-events:none;
-// }
+.cardHeader {
+  pointer-events: none;
+}
+
+
 
 // body {
 //   background-color: $bg-color;

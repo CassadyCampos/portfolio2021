@@ -20,7 +20,7 @@ const Projects = () => {
 
             <div className={styles.container}>
                 <div className={styles.card}>
-                    <h2>Defi Fund Pool</h2>
+                    <h2 className={styles.cardHeader}>Defi Fund Pool</h2>
                     <i className="fas fa-arrow-right"></i>
                     <p>Decentralized pool funding</p>
                     <div className={styles.pic}></div>
@@ -58,7 +58,7 @@ const Projects = () => {
                     <button></button>
                 </div>
                 <div className={styles.card + ' ' + styles.card2}>
-                    <h2>Vauxhall</h2>
+                    <h2 className={styles.cardHeader}>Vauxhall</h2>
                     <i className="fas fa-arrow-right"></i>
                     <p>a lonely trip.</p>
                     <div className={styles.pic}></div>
