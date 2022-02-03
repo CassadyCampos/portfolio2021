@@ -9,7 +9,6 @@ import 'animate.css';
 import github from '../public/github.png';
 import linkedIn from '../public/linkedIn.png';
 import React, { useState } from 'react';
-import Angular from '../public/devicon-master/icons/angularjs/angularjs-original.svg'
 
 export default function Home({ posts }) {
     const [open, set] = useState(true);

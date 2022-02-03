@@ -96,8 +96,8 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       font-family: "Poppins", sans-serif;
       position: absolute;
       bottom: 0;
-      right: 130px;
-      font-size: 60px;
+      left: 20px;
+      font-size: 3rem;
       font-weight: 700;
       color: #fff;
     }
@@ -151,8 +151,8 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       border-radius: 80px;
     }
 
+    // Add delays to transitions for each icon
     .social .icon:nth-of-type(1) {
-      // border: 1px solid red;
       -webkit-transition-delay: 0.4s;
       transition-delay: 0.4s;
     }
@@ -172,10 +172,11 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       transition-delay: 0.1s;
     }
 
+    // opacity to show icons, transform to bulge
     &:hover .icon {
       opacity: 1;
       -webkit-transform: scale(1);
-      transform: scale(1);
+      transform: scale(0.50);
     }
 
     button {
@@ -193,9 +194,9 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       mix-blend-mode: hard-light;
 
       .icon {
-        font-size:3rem;
-        width:24px;
-        height:24px;
+        font-size:0.5rem;
+        // width:24px;
+        // height:24px;
       }
     }
 
