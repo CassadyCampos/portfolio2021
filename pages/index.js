@@ -55,8 +55,8 @@ export default function Home({ posts }) {
                         around, check out one of my projects or read one of my
                         posts!
                     </div>
-                    <div className="d-flex mt-4">
-                        <div className="col-1 animate__animated animate__fadeInUpBig animate__slow animate__delay-1s">
+                    <div className="d-flex mt-4 animate__animated animate__fadeInRightBig animate__slower">
+                        <div className="col-1 ">
                             <a
                                 href={'https://github.com/CassadyCampos'}
                                 target="_blank"

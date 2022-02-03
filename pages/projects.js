@@ -88,10 +88,10 @@ const Projects = () => {
                         <li></li>
                     </ul>
                     <div className={styles.social}>
-                        <i className="fab fa-facebook-f"></i>
-                        <i className="fab fa-twitter"></i>
-                        <i className="fab fa-instagram"></i>
-                        <i className="fab fa-github"></i>
+                    <FontAwesomeIcon className={styles.icon} icon={faTwitter}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faInstagram}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faGithub}/>
+                        <FontAwesomeIcon className={styles.icon} icon={faLinkedin}/>
                     </div>
                     <button></button>
                 </div>

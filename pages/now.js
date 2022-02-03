@@ -17,7 +17,7 @@ const Now = () => {
             <br/>
 
             <div className={styles.baseText}>
-                {"My current interests are Web3, and blockchain, and web technologies. I'm into reading books, and learning about random things that I can write about."}
+                {"My current interests are web technologies, and blockchain. I grew to love reading books, and I enjoy learnign about random things that I can write about."}
             </div>
             <br/>
 
