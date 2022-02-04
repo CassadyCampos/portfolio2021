@@ -1,8 +1,7 @@
 import styles from '../styles/projects.module.scss';
-import { faTwitter, faInstagram, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const BlogCard = ({ title, subtitle }) => {
+const BlogCard = ({ title, subtitle, icons }) => {
     return (
         <div className={styles.card}>
             <h2 className={styles.cardHeader}>{title}</h2>
@@ -35,10 +34,9 @@ const BlogCard = ({ title, subtitle }) => {
                 <li></li>
             </ul>
             <div className={styles.social}>
-                <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
-                <FontAwesomeIcon className={styles.icon} icon={faInstagram} />
-                <FontAwesomeIcon className={styles.icon} icon={faGithub} />
-                <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+                {icons.map((icon) => (
+                    <FontAwesomeIcon className={styles.icon} icon={icon} />
+                ))}
             </div>
             <button></button>
         </div>

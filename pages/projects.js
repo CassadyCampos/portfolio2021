@@ -18,7 +18,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faInstagram}/> */}
 
             <div className={styles.container}>
-                <BlogCard title="Test" subtitle="smaller test" />
+                <BlogCard title="Test" subtitle="smaller test" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 <div className={styles.card}>
                     <h2 className={styles.cardHeader}>Defi Fund Pool</h2>
                     <i className="fas fa-arrow-right"></i>
