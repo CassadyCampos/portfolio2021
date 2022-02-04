@@ -1,9 +1,8 @@
 import styles from '../styles/projects.module.scss';
 import 'animate.css';
-import { ReactElement } from 'react';
 import { faTwitter, faInstagram, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import BlogCard from "../components/BlogCard";
 const Projects = () => {
     return (
         <div>
@@ -19,6 +18,7 @@ const Projects = () => {
             <FontAwesomeIcon icon={faInstagram}/> */}
 
             <div className={styles.container}>
+                <BlogCard title="Test" subtitle="smaller test" />
                 <div className={styles.card}>
                     <h2 className={styles.cardHeader}>Defi Fund Pool</h2>
                     <i className="fas fa-arrow-right"></i>
