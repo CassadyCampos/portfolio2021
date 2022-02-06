@@ -14,15 +14,13 @@ const Projects = () => {
             >
                 projects
             </h1>
-            {/* <FontAwesomeIcon icon={faTwitter}/>
-            <FontAwesomeIcon icon={faInstagram}/> */}
-
             <div className={styles.container}>
                 <BlogCard title="Test" subtitle="smaller test" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                <BlogCard title="Second Test" subtitle="bigger test" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 <div className={styles.card}>
                     <h2 className={styles.cardHeader}>Defi Fund Pool</h2>
                     <i className="fas fa-arrow-right"></i>
-                    <p>Decentralized pool funding</p>
+                    <p className={styles.subTitle}>Decentralized pool funding</p>
                     <div className={styles.pic}></div>
                     <ul>
                         <li></li>
@@ -60,7 +58,7 @@ const Projects = () => {
                 <div className={styles.card + ' ' + styles.card2}>
                     <h2 className={styles.cardHeader}>Vauxhall</h2>
                     <i className="fas fa-arrow-right"></i>
-                    <p>a lonely trip.</p>
+                    <p className={styles.subTitle}>a lonely trip.</p>
                     <div className={styles.pic}></div>
                     <ul>
                         <li></li>

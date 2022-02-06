@@ -6,7 +6,7 @@ const BlogCard = ({ title, subtitle, icons }) => {
         <div className={styles.card}>
             <h2 className={styles.cardHeader}>{title}</h2>
             <i className="fas fa-arrow-right"></i>
-            <p>{subtitle}</p>
+            <p className={styles.subTitle}>{subtitle}</p>
             <div className={styles.pic}></div>
             <ul>
                 <li></li>
