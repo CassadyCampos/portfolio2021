@@ -35,7 +35,7 @@ const BlogCard = ({ title, subtitle, icons }) => {
             </ul>
             <div className={styles.social}>
                 {icons.map((icon) => (
-                    <FontAwesomeIcon key={icon} className={styles.icon} icon={icon}  />
+                    <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
                 ))}
             </div>
             <button></button>

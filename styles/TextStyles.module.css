@@ -1,0 +1,32 @@
+.dateText {
+    color: #373737;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.baseFont {
+    font-family: 'Arbutus Slab';
+    color: #373737;
+
+}
+
+.baseText {
+  font-size: 1.20rem;
+  line-height:34px;
+  font-weight:300;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns:
+      1fr
+      min(65ch, 100%)
+      1fr;
+  }
+  .wrapper > * {
+    grid-column: 2;
+  }
+  .fullBleed {
+    width: 100%;
+    grid-column: 1 / 4;
+  }

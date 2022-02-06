@@ -5,13 +5,13 @@ import path from 'path';
 import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import Button from '../../components/Button.jsx';
-import styles from '../../styles/Blog.module.css';
+import styles from '../../styles/TextStyles.module.css';
 import Image from 'next/image';
 import 'animate.css'
 
 const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => {
     return (
-        <div className="mt-4 d-flex flex-wrap justify-content-center">
+        <div className={styles.wrapper + " mt-4 "}>
             <h1
                 className={
                     styles.baseFont +
@@ -23,7 +23,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
             <div>
                 <Image
                     src={thumbnailUrl}
-                    className="img-fluid mt-1 rounded animate__animated animate__slideInUp"
+                    className={styles.fullBleed + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
                     alt="thumbnail"
                     width={1000}
                     height={360}
@@ -31,7 +31,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
                 />
                 <div className={styles.dateText + ' animate__animated animate__slideInUp'}>{date}</div>
                 <br/>
-                <div className={' animate__animated animate__slideInUp'}>
+                <div className={styles.baseFont + ' ' +  styles.baseText + ' animate__animated animate__slideInUp'}>
                 <MDXRemote
                     
                     {...mdxSource}

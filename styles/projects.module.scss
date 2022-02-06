@@ -10,12 +10,6 @@ $blue: #2b26c3;
 $img-url: "../public/blockchain.jpeg";
 $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80";
 
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
 // shrink and hide icons initially
 .icon {
   opacity: 0;
@@ -32,22 +26,16 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
   pointer-events: none;
 }
 
-// body {
-//   background-color: $bg-color;
-//   width: 100vw;
-//   height: 100vh;
-// }
-
 .container {
   width: 100%;
   max-height:600px;
+  padding-top: 4px;
   overflow: scroll;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  // flex-direction: column;
 
   .card:hover {
     transform: scale(1.02);
