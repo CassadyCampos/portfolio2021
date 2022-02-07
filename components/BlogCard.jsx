@@ -9,12 +9,6 @@ const BlogCard = ({ title, subtitle, icons }) => {
             <i className="fas fa-arrow-right"></i>
             <p className={styles.subTitle}>{subtitle}</p>
             <div className={styles.pic}></div>
-            <Image
-            style={{
-                zIndex: 100,
-            }}
-            
-            />
             <ul>
                 <li></li>
                 <li></li>
