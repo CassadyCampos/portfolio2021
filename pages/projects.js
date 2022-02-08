@@ -16,9 +16,18 @@ const Projects = () => {
                 projects
             </h1>
             <div className={styles.container}>
+                <div className="col-12">
                 <BlogCard cardImage={"/alberta.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                </div>
+                <div className="col-12">
                 <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
-                {/* <BlogCard title="Defi Pool Funding" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
+                </div>
+                <div className="col-12">
+                <BlogCard cardImage={"/blockchain.jpeg"} title="Defi Pool Funding" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                </div>
+                <div className="col-12">
+                <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                </div>
                 {/* <BlogCard title="IoT Temp. Network" subtitle="IOT temperature monitoring" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
 
             </div>

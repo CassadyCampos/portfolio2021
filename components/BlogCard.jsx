@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const BlogCard = ({ title, subtitle, icons, cardImage }) => {
     return (
-        <div className={styles.card + ' col-7'}>
+        <div className={styles.card + ''}>
             <h2 className={styles.cardHeader}>{title}</h2>
             <i className="fas fa-arrow-right"></i>
             <p className={styles.subTitle}>{subtitle}</p>
@@ -40,7 +40,7 @@ const BlogCard = ({ title, subtitle, icons, cardImage }) => {
                 ))}
             </div>
             <button
-            // style={{backgroundColor: "C1E1C1"}}
+            style={{backgroundColor: "#DA4D1D"}}
             ></button>
         </div>
     );

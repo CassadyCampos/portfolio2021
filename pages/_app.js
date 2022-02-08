@@ -21,8 +21,14 @@ function MyApp({ Component, pageProps }) {
                     href="https://fonts.gstatic.com"
                     crossOrigin
                 />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap"
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                    crossorigin
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
                     rel="stylesheet"
                 />
             </Head>
