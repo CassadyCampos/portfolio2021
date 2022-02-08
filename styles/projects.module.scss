@@ -133,7 +133,11 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       background-size:100% 100%;
 
       // make images grey by default
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
       filter: grayscale(100%);
+      transition: all 1s ease;
+
     }
 
     .social {
@@ -177,8 +181,8 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
     // opacity to show icons, transform to bulge
     &:hover .icon {
       opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
     }
 
     button {
@@ -210,7 +214,10 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
     }
     
     &:hover .pic {
-      filter: grayscale(0);
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      filter: grayscale(0%);
+
       
     }
   }

@@ -16,6 +16,7 @@ const Projects = () => {
                 projects
             </h1>
             <div className={styles.container}>
+                <BlogCard cardImage={"/alberta.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 {/* <BlogCard title="Defi Pool Funding" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
                 {/* <BlogCard title="IoT Temp. Network" subtitle="IOT temperature monitoring" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
