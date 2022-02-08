@@ -2,13 +2,13 @@ import styles from '../styles/projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 
-const BlogCard = ({ title, subtitle, icons }) => {
+const BlogCard = ({ title, subtitle, icons, cardImage }) => {
     return (
         <div className={styles.card + ' col-7'}>
             <h2 className={styles.cardHeader}>{title}</h2>
             <i className="fas fa-arrow-right"></i>
             <p className={styles.subTitle}>{subtitle}</p>
-            <div className={styles.pic}></div>
+            <div style={{backgroundImage: `url(${cardImage})`}} className={styles.pic}></div>
             <ul>
                 <li></li>
                 <li></li>

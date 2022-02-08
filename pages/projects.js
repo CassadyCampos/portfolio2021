@@ -3,7 +3,7 @@ import 'animate.css';
 import { faTwitter, faInstagram, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import BlogCard from "../components/BlogCard";
-import deskSetup from "../public/deskSetup.jpeg";
+// import deskSetup from "/deskSetup.jpeg";
 const Projects = () => {
     return (
         <div>
@@ -16,7 +16,7 @@ const Projects = () => {
                 projects
             </h1>
             <div className={styles.container}>
-                <BlogCard cardImage={deskSetup} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 {/* <BlogCard title="Defi Pool Funding" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
                 {/* <BlogCard title="IoT Temp. Network" subtitle="IOT temperature monitoring" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
 
