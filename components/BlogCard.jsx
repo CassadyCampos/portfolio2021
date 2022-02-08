@@ -39,7 +39,9 @@ const BlogCard = ({ title, subtitle, icons, cardImage }) => {
                     <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
                 ))}
             </div>
-            <button></button>
+            <button
+            // style={{backgroundColor: "C1E1C1"}}
+            ></button>
         </div>
     );
 };
