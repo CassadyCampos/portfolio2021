@@ -16,13 +16,13 @@ const Projects = () => {
                 projects
             </h1>
             <div className={styles.container}>
-                <div className="">
+                <div className="d-flex col-12 justify-content-center">
                 <BlogCard cardImage={"/alberta.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 </div>
-                <div className="">
+                <div className="d-flex col-12 justify-content-center">
                 <BlogCard cardImage={"/blockchain.jpeg"} title="Defi Pool Fund" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 </div>
-                <div className="">
+                <div className="d-flex col-12 justify-content-center">
                 <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 </div>
                 {/* <BlogCard title="IoT Temp. Network" subtitle="IOT temperature monitoring" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
