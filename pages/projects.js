@@ -23,9 +23,8 @@ const Projects = () => {
                 <BlogCard cardImage={"/blockchain.jpeg"} title="Defi Pool Fund" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 </div>
                 <div className="d-flex col-12 justify-content-center">
-                <BlogCard cardImage={"/deskSetup.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                <BlogCard cardImage={"/ardunio.jpeg"} title="IoT Temp. Network" subtitle="Home Temperature Network" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 </div>
-                {/* <BlogCard title="IoT Temp. Network" subtitle="IOT temperature monitoring" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/> */}
 
             </div>
         </div>

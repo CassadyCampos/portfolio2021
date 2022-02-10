@@ -140,7 +140,7 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       -webkit-filter: grayscale(100%);
       -moz-filter: grayscale(100%);
       filter: grayscale(100%);
-      transition: all 1s ease;
+      transition: all 0.5s ease;
 
     }
 
@@ -185,8 +185,8 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
     // opacity to show icons, transform to bulge
     &:hover .icon {
       opacity: 1;
-      -webkit-transform: scale(0.8);
-      transform: scale(0.8);
+      -webkit-transform: scale(0.7);
+      transform: scale(0.7);
     }
 
     button {
@@ -205,7 +205,7 @@ $img-url2: "https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=r
       mix-blend-mode: hard-light;
 
       .icon {
-        font-size:3rem;
+        font-size:2.8rem;
       }
     }
 

@@ -24,7 +24,7 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="d-flex">
+            <main className="d-flex px-5">
                 <div
                     id="home"
                     className="d-flex flex-column text-left justify-content-center"
