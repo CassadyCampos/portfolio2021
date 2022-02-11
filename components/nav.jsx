@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
+// Need to fix javascript because dropdown will not open
 const Nav = () => {
     return (
         <div className="">
