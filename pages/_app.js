@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Nav from '../components/nav';
+import CustomNav from '../components/CustomNav';
 import Footer from '../components/Footer';
 import styles from '../styles/global.css';
-// config.autoAddCss = false
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
+
     return (
         <>
             <Head>
@@ -38,7 +39,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
 
             <div className="">
-                <Nav />
+                <CustomNav />
                 <main className="min-vh-100">
                     <div className={'d-flex flex-wrap justify-content-center'}>
                         <div className={'py-4'}>
