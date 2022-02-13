@@ -9,13 +9,13 @@ class CustomNav extends Component {
     render() {
         return (
             <Navbar bg="light" expand="sm">
-                <Container>
+                <Container fluid className="px-5 py-3">
                     <Navbar.Brand href="/" className={styles.baseFont}>
                         Cassady Campos
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
+                        <Nav className="me-auto mx-2">
                             <Nav.Link href="/now">Now</Nav.Link>
                             <Nav.Link href="/posts">Posts</Nav.Link>
                             <Nav.Link href="/projects">Projects</Nav.Link>
