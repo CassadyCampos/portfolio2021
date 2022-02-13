@@ -11,7 +11,7 @@ import 'animate.css'
 
 const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => {
     return (
-        <div className={styles.wrapper + " mt-4 "}>
+        <div className={styles.wrapper + " mt-4 mx-5 "}>
             <h1
                 className={
                     styles.baseFont +

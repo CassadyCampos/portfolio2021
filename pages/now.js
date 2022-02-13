@@ -4,7 +4,7 @@ import 'animate.css'
 
 const Now = () => {
     return (
-        <div className={textStyles.wrapper + ' animate__animated animate__slideInUp'}>
+        <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
             <h1 className={styles.baseFont + " display-4 py-4 text-center"}>now</h1>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
