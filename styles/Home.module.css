@@ -52,3 +52,7 @@
     height: 100%;
     justify-content: center;
   }
+
+  .postLink {
+      cursor: pointer;
+  }

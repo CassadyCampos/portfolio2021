@@ -15,7 +15,7 @@ const Posts = ({ posts }) => {
                     <Link href={'/blog/' + post.slug} passHref key={index}
                     className="m-5"
                     >
-                        <div className="m-5"> 
+                        <div className={styles.postLink + " m-5"}> 
                             <div className={styles.baseText + ' ' + styles.fadeIn + ' animate__animated animate__fadeInRightBig animate__slow'}>
                                 {post.frontMatter.title}
                             </div>
