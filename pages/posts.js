@@ -33,6 +33,7 @@ const Posts = ({ posts }) => {
 export const getStaticProps = async () => {
     const files = fs.readdirSync(path.join('posts'));
     console.log(typeof files)
+    console.log(files)
     const posts = files.map((filename) => {
         // console.log(typeof filename)
         const markdownWithMeta = fs.readFileSync(
