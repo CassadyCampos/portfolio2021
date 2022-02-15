@@ -4,6 +4,8 @@ import Image from "next/image";
 
 const BlogCard = ({ title, subtitle, icons, cardImage }) => {
     return (
+        <div className={"d-flex col-12 justify-content-center"}>
+
         <div className={styles.card }>
             <h2 className={styles.cardHeader}>{title}</h2>
             <i className="fas fa-arrow-right"></i>
@@ -43,6 +45,8 @@ const BlogCard = ({ title, subtitle, icons, cardImage }) => {
             style={{backgroundColor: "#DA4D1D"}}
             ></button>
         </div>
+        </div>
+
     );
 };
 
