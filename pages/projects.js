@@ -1,6 +1,7 @@
 import styles from '../styles/projects.module.scss';
 import 'animate.css';
 import { faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+// import { nextjs } from "/icons/svg/nextjs.svg"
 import BlogCard from "../components/BlogCard";
 // import deskSetup from "/deskSetup.jpeg";
 const Projects = () => {

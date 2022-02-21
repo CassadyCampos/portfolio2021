@@ -2,7 +2,7 @@ import styles from '../styles/projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from "next/image";
 
-const BlogCard = ({ title, subtitle, icons, cardImage }) => {
+const BlogCard = ({ title, subtitle, icons, cardImage, icon }) => {
     return (
         <div className={"d-flex col-12 justify-content-center"}>
 
@@ -38,7 +38,8 @@ const BlogCard = ({ title, subtitle, icons, cardImage }) => {
             </ul>
             <div className={styles.social}>
                 {icons.map((icon) => (
-                    <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
+                    <img className={ styles.icon} src="/icons/svg/nextjs.svg" alt="An SVG of an eye" />
+                    // <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
                 ))}
             </div>
             <button
