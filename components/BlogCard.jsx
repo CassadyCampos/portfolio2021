@@ -38,7 +38,7 @@ const BlogCard = ({ title, subtitle, icons, cardImage, icon }) => {
             </ul>
             <div className={styles.social}>
                 {icons.map((icon) => (
-                    <img className={ styles.icon} src="/icons/svg/nextjs.svg" alt="An SVG of an eye" />
+                    <img className={ styles.icon} src="/icons/svg/nextjs.svg"  />
                     // <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
                 ))}
             </div>
