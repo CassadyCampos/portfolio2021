@@ -2,6 +2,7 @@ import styles from '../styles/projects.module.scss';
 import 'animate.css';
 import { faTwitter, faInstagram, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // import { nextjs } from "/icons/svg/nextjs.svg"
+// import {nextjs} from "/icons/svg/nextjs.svg"
 import BlogCard from "../components/BlogCard";
 // import deskSetup from "/deskSetup.jpeg";
 const Projects = () => {
@@ -16,7 +17,7 @@ const Projects = () => {
                 projects
             </h1>
             <div className={styles.container + ' px-5'}>
-                <BlogCard cardImage={"/alberta.jpeg"} title="Portfolio" subtitle="my latest personal website" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
+                <BlogCard cardImage={"/alberta.jpeg"} title="Portfolio" subtitle="my latest personal website" icon={"/icons/svg/nextjs.svg"} icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 <BlogCard cardImage={"/blockchain.jpeg"} title="Defi Pool Fund" subtitle="pool funding with smart contracts" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
                 <BlogCard cardImage={"/ardunio.jpeg"} title="IoT Temp. Network" subtitle="Home Temperature Network" icons={[faTwitter, faInstagram, faGithub, faLinkedin]}/>
             </div>

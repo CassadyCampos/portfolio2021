@@ -1,6 +1,5 @@
 import styles from '../styles/projects.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from "next/image";
 
 const BlogCard = ({ title, subtitle, icons, cardImage, icon }) => {
     return (
@@ -37,10 +36,11 @@ const BlogCard = ({ title, subtitle, icons, cardImage, icon }) => {
                 <li></li>
             </ul>
             <div className={styles.social}>
-                {icons.map((icon) => (
+                <img className={styles.icon} src={icon}/>
+                {/* {icons.map(() => (
                     <img className={ styles.icon} src="/icons/svg/nextjs.svg"  />
                     // <FontAwesomeIcon key={icons.indexOf(icon)} className={styles.icon} icon={icon}  />
-                ))}
+                ))} */}
             </div>
             <button
             style={{backgroundColor: "#DA4D1D"}}
