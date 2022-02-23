@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 class CustomNav extends Component {
     render() {
         return (
-            <Navbar bg="light" expand="sm">
+            <Navbar bg="" expand="sm">
                 <Container fluid className="px-5 py-3">
                     <Navbar.Brand href="/" className={styles.baseFont}>
                         Cassady Campos
@@ -19,13 +19,6 @@ class CustomNav extends Component {
                             <Nav.Link href="/now">Now</Nav.Link>
                             <Nav.Link href="/posts">Posts</Nav.Link>
                             <Nav.Link href="/projects">Projects</Nav.Link>
-                            {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/now">Now</NavDropdown.Item>
-          <NavDropdown.Item href="/posts">Posts</NavDropdown.Item>
-          <NavDropdown.Item href="/projects">Projects</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
