@@ -1,0 +1,29 @@
+---
+title: "how to setup ssh keys for github"
+date: 'April 27th, 2022'
+description: "How to connect SHA encrypted SSH keys to your github repositories"
+thumbnailUrl: '/how-to-setup-ssh-keys.jpg'
+tags: ['version control', 'cryptography']
+postId: 6
+---
+
+### what are SSH keys and why use them
+If you've ever worked on code collabratively, you've probably used some form of version control (I hope). Github, Gitlab, Azure DevOps, BitBucket etc... 
+There are many choices out there. I will mostly be refering to Github in this article.
+Everytime you interact with Github or some remote repository using Git, you are using some type of protocol for client-server communication.
+
+Currently, Git supports the following
+* HTTP
+* HTTPS
+* SSH
+* Plain git
+
+Arguably the most cryptographically secure network protocols in this list are HTTPS and SSH. 
+
+Specifiacally with SSH, we are able to identify each user that is interacting with this git remote repository. Also, 
+it allows contributors to bypass entering their credientials everytime they are interacting with the remote server.
+
+### what is SSH
+SSH stands for Secure Shell Protcol. 
+
+Typically there are two keys. A public and private key. The public key is typically found stored on the computer of the user trying to log in remotely.
