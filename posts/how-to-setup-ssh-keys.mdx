@@ -1,16 +1,19 @@
 ---
 title: "how to setup ssh keys for github"
-date: 'April 27th, 2022'
+date: 'May 16th, 2022'
 description: "How to connect SHA encrypted SSH keys to your github repositories"
 thumbnailUrl: '/how-to-setup-ssh-keys.jpg'
 tags: ['version control', 'cryptography']
 postId: 6
 ---
 
-### what are SSH keys and why use them
+### What are SSH keys and why use them
+<p>
 If you've ever worked on code collabratively, you've probably used some form of version control (I hope). Github, Gitlab, Azure DevOps, BitBucket etc... 
 There are many choices out there. I will mostly be refering to Github in this article.
 Everytime you interact with Github or some remote repository using Git, you are using some type of protocol for client-server communication.
+
+<br/>
 
 Currently, Git supports the following
 * HTTP
@@ -20,10 +23,83 @@ Currently, Git supports the following
 
 Arguably the most cryptographically secure network protocols in this list are HTTPS and SSH. 
 
-Specifiacally with SSH, we are able to identify each user that is interacting with this git remote repository. Also, 
+Specifically with SSH, we are able to identify each user that is interacting with this git remote repository. Also, 
 it allows contributors to bypass entering their credientials everytime they are interacting with the remote server.
+</p>
+<br/>
 
-### what is SSH
+### What is ssh
+<p>
 SSH stands for Secure Shell Protcol. 
-
+<br/>
 Typically there are two keys. A public and private key. The public key is typically found stored on the computer of the user trying to log in remotely.
+</p>
+
+
+### How to setup ssh keys for github
+<p>
+Alright, now let's get into how to actually set up an ssh key for your github account
+The process of setting up an SSH key can be broken down into 3 main steps. Not that I am using git bash to write my commands.
+</p>
+<br/>
+
+## Step 1: Generate your key's using the terminal
+<p>
+
+Open up git bash, once open we will write the following command
+<SyntaxHighlighter language="">
+  {`
+    ssh-keygen -t rsa -b 4096 -C "youremail@youremail.com"
+  `}
+</SyntaxHighlighter>
+You should be prompted to give a file location or you may press 'Enter' to accept the default file location (recomeneded).
+Next step, you will be prompted to enter a secure passphrase. Go ahead and enter this in an remember it as we will need it later.
+Completed step 1! You should receive output from the terminal that your key has been generated
+</p>
+<br/>
+
+## Step 2: Add the private key to your SSH agent
+<p>
+The next step is to register the private key with your local ssh agent. Once again from your terminal write the following command to
+start up the ssh agent
+
+<SyntaxHighlighter language="">
+  {`
+    eval "$(ssh-agent -s)"
+  `}
+</SyntaxHighlighter>
+
+You know this step is correct if you receive an output stating the agents id. i.e 'Agent pid 593'
+With the agent started we can now add the private key using the command
+
+<SyntaxHighlighter language="">
+  {`
+    ssh-add ~/.ssh\id_rsa
+  `}
+</SyntaxHighlighter>
+
+This looks into the default location for ssh keys. If in step 1 you created a different file path, you will need to change the location you put in this step accordingly.
+Once pressing enter you should be prompted for the passphrase you created in Step 1. 
+
+Once you enter in the passphrase, you should have received confirmation that the identity was added.
+</p>
+<br/>
+
+## Step 3: Add the public key to github
+<p>
+Navigate to the file location where the keys were saved in Step 1 (Using file explorer or something similar). 
+
+Once you're at the location you should see two files. One is the private key, the other is the public key and it has a file type of PUB.
+Open the public key file with Notepad and copy the contents. 
+
+Next, login to your Github account and travel to Settings (top left). 
+In Settings, there should be a link on the left that says 'SSH and GPG keys' click that and then click 'New SSH Key'
+
+Enter a title your prefer, and then paste the contents of the public key file into the text field.
+Finally click 'Add SSH Key' and your done! You have successfully set up an ssh key on Github!
+
+Now whenever you push/pull from a repository that is using SSH, you will be doing so using ssh communication!
+You may get prompted to enter in your passphrase from Step 1 the first time your performaing an action. But other than that it is all set up :).
+<br/>
+Thanks for following along!
+</p>
