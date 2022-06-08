@@ -38,16 +38,12 @@ function MyApp({ Component, pageProps }) {
                 />
             </Head>
 
-            <div className="">
+            <div className="min-vh-100 d-flex flex-column">
                 <CustomNav />
-                <main className="min-vh-100">
-                    <div className={'d-flex flex-wrap justify-content-center'}>
-                        <div className={'py-4'}>
+                <main className="d-flex flex-fill">
                             <Component {...pageProps} />
-                        </div>
-                    </div>
                 </main>
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </>
     );

@@ -14,7 +14,7 @@ export default function Home({ posts }) {
     const [open, set] = useState(true);
 
     return (
-        <div>
+        <div className="d-flex flex-fill">
             <Head>
                 <title>Cassady Campos Software</title>
                 <meta
@@ -24,19 +24,12 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="d-flex px-5">
+            <main className="d-flex flex-fill px-5">
                 <div
                     id="home"
-                    className="d-flex flex-column text-left justify-content-center"
-                    style={{ height: 'calc(85vh - 150px)' }}
+                    className="d-flex flex-fill flex-column text-left justify-content-center"
+                    // style={{ height: 'calc(85vh - 150px)' }}
                 >
-                    <h1
-                        className={
-                            ' animate__animated animate__fadeInRightBig animate__slow'
-                        }
-                    >
-                        Software Developer
-                    </h1>
                     <div
                         className={
                             styles.subTitle +
@@ -92,6 +85,17 @@ export default function Home({ posts }) {
                             </a>
                         </div>
                     </div>
+                    <div className="d-flex flex-fill align-items-end">
+                    <div
+                        className={
+                            styles.title +
+                            ' animate__animated animate__fadeInRightBig animate__slow flex-fill'
+                        }
+                    >
+                        Software Developer
+                    </div>
+                    </div>
+
                 </div>
             </main>
         </div>

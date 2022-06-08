@@ -8,7 +8,7 @@ const Now = () => {
             <h1 className={styles.baseFont + " display-4 py-4 text-center"}>now</h1>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2021 I graduated studying Computer Science from the Univerisity of Lethbridge, AB, Canada."}
+                {"In 2021 I graduated studying Computer Science from the Univerisity of Lethbridge, AB, Canada. Afterwards I worked as a full-stack Software Developer at Arcurve. I was building a CRM web app for prominent figures in the Oil and Energy Sector. In this role I would manage and expand our UI automation test suite into an intergal part of our deployment cycle, and onboard and mentor internship students."}
             </div>
         <br/>
 
