@@ -26,9 +26,17 @@
     font-size: 0.85rem;
 }
 
+.mainTitle {
+    font-family: 'Arbutus Slab', serif;
+    color: #373737;
+    font-size: 4.2rem;
+}
+
 .subTitle {
+    font-family: 'Arbutus Slab', serif;
+    color: #373737;
     font-weight: 200;
-    font-size:1.14rem;
+    font-size:1.44rem;
 }
 .footer {
     /* position:absolute; */
@@ -66,3 +74,7 @@
   .postLink {
       cursor: pointer;
   }
+
+.grayScale {
+    filter: grayscale(1);
+}
