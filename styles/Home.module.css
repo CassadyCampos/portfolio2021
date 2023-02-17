@@ -3,6 +3,16 @@
     color: #373737;
 }
 
+.largeFont {
+    font-family: 'Arbutus Slab', serif;
+    color: #373737;
+    font-size: 1.6rem !important;
+}
+
+.navLink {
+    font-size: 1.2rem !important;
+}
+
 .baseText { 
     font-family: 'Arbutus Slab', serif;
     color: #373737;

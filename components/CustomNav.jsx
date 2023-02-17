@@ -10,15 +10,15 @@ class CustomNav extends Component {
         return (
             <Navbar bg="" expand="sm">
                 <Container fluid className="px-5 py-3">
-                    <Navbar.Brand href="/" className={styles.baseFont}>
+                    <Navbar.Brand href="/" className={styles.largeFont}>
                         Cassady Campos
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto mx-2">
-                            <Nav.Link href="/now">Now</Nav.Link>
-                            <Nav.Link href="/posts">Posts</Nav.Link>
-                            <Nav.Link href="/projects">Projects</Nav.Link>
+                            <Nav.Link href="/now" className={styles.navLink}>Now</Nav.Link>
+                            <Nav.Link href="/posts" className={styles.navLink}>Posts</Nav.Link>
+                            <Nav.Link href="/projects" className={styles.navLink}>Projects</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

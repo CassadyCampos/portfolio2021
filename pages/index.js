@@ -6,8 +6,10 @@ import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import 'animate.css';
-import github from '../public/github.png';
+import github from '../public/githubgif.gif';
 import linkedIn from '../public/linkedIn.png';
+import pokemon from '../public/pokemon.gif';
+
 import React, { useState } from 'react';
 
 export default function Home({ posts }) {
@@ -69,6 +71,21 @@ export default function Home({ posts }) {
                                     width={48}
                                     height={48}
                                     // objectFit="cover"
+                                />
+                            </a>
+                        </div>
+                        <div className="col-1 ">
+                            <a
+                                href={'https://github.com/CassadyCampos'}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <Image
+                                    className=""
+                                    src={pokemon}
+                                    alt="thumbnail"
+                                    width={84}
+                                    height={64}
                                 />
                             </a>
                         </div>
