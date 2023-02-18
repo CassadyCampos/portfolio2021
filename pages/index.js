@@ -7,7 +7,7 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 import 'animate.css';
 import github from '../public/githubgif.gif';
-import linkedIn from '../public/linkedInGif.gif';
+import linkedIn from '../public/linkedIn2.gif';
 import pokemon from '../public/pokemon.gif';
 
 import React, { useState } from 'react';
@@ -57,7 +57,7 @@ export default function Home({ posts }) {
                         I like to build things, read things, and write things!
                     </div>
                     <div className="d-flex mt-4 animate__animated animate__fadeInRightBig animate__slower">
-                        <div className="col-1 ">
+                        <div className="col-2">
                             <a
                                 href={'https://github.com/CassadyCampos'}
                                 target="_blank"
@@ -68,14 +68,14 @@ export default function Home({ posts }) {
                                     src={github}
                                     // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                     alt="thumbnail"
-                                    width={48}
-                                    height={48}
+                                    width={64}
+                                    height={64}
                                     // objectFit="cover"
                                 />
                             </a>
                         </div>
 
-                        <div className="col-1">
+                        <div className="col-2">
                             <a
                                 href={
                                     'https://www.linkedin.com/in/cassady-campos-2915531a9/'
@@ -88,8 +88,8 @@ export default function Home({ posts }) {
                                     src={linkedIn}
                                     // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                     alt="thumbnail"
-                                    width={48}
-                                    height={48}
+                                    width={64}
+                                    height={64}
                                     // objectFit="cover"
                                 />
                             </a>
