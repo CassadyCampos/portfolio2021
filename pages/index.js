@@ -26,10 +26,10 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="d-flex px-5">
+            <main className="d-flex  px-5">
                 <div
                     id="home"
-                    className="d-flex flex-column text-left justify-content-center"
+                    className="d-flex  flex-column text-left justify-content-center"
                     style={{ height: 'calc(85vh - 150px)' }}
                 >
                     <h1
@@ -56,7 +56,7 @@ export default function Home({ posts }) {
                     >
                         I like to build things, read things, and write things!
                     </div>
-                    <div className="d-flex mt-4 animate__animated animate__fadeInRightBig animate__slower">
+                    <div className="d-flex flex-wrap mt-4 animate__animated animate__fadeInRightBig animate__slower">
                         <div className="col-2">
                             <a
                                 href={'https://github.com/CassadyCampos'}
@@ -94,7 +94,7 @@ export default function Home({ posts }) {
                                 />
                             </a>
                         </div>
-                        {/* <div className="col-1 ">
+                        <div className="col-12 col-sm-2">
                             <a
                                 href={'https://github.com/CassadyCampos'}
                                 target="_blank"
@@ -104,11 +104,11 @@ export default function Home({ posts }) {
                                     className=""
                                     src={pokemon}
                                     alt="thumbnail"
-                                    width={84}
-                                    height={64}
+                                    width={120}
+                                    height={78}
                                 />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </main>
