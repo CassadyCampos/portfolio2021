@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 class CustomNav extends Component {
     render() {
         return (
-            <Navbar bg="" expand="sm">
+            <Navbar sticky="top" bg="" variant="light" expand="sm">
                 <Container fluid className="px-5 py-3">
                     <Navbar.Brand href="/" className={styles.largeFont}>
                         Cassady Campos
