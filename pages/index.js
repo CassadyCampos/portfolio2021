@@ -96,9 +96,7 @@ export default function Home({ posts }) {
                         </div>
                         <div className="col-12 col-sm-2">
                             <a
-                                href={'https://github.com/CassadyCampos'}
-                                target="_blank"
-                                rel="noreferrer"
+                                href={'/pokemonBattle'}
                             >
                                 <Image
                                     className=""

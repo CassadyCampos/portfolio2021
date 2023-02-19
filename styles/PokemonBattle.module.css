@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+
+.bubbleWrap1, .bubbleLink {
+  background-color:#000;
+  color: #000;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 0.8rem;
+  line-height:1.3em;
+  text-align: left;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+}
+
+.bubbleWrap1 {
+  position: relative;
+  width: 240px;
+  height: 60px;
+  background-color:#000;
+  margin-bottom:80px;
+}
+
+.bubbleWrap2 {
+  background-color: #000;
+    width: 245px !important;
+    height: 54px !important;
+    position: absolute;
+    margin-left: -2px;
+    margin-top: 3px;
+}
+
+.innerWrap1 {
+  position: relative;
+  width: 220px;
+  height: 60px;
+  background-color:white;
+  margin-bottom:80px;
+}
+
+.innerWrap2 { 
+  background-color: white;
+    width: 215px !important;
+    height: 54px !important;
+    position: absolute;
+    margin-left: -2px;
+    margin-top: -20px;
+}
+
+.bubbleLink {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 236px;
+  height: 54px;
+  margin-left: 1px;
+  margin-top: -1px;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.bubbleLinkWrap {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 238px;
+  height: 51px;
+  margin-left: 4px;
+  margin-top: 1px;
+  padding-top: 0px;
+}
+
+:hover.bubbleLink { background-color:white; }
+:active.bubbleLink { background-color:white; }
+
+.bubbleInput {
+  font-family: "Press Start 2P", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  border: none;
+  background-color: rgba(255,255,255,0.3);
+  /* color: #fff; */
+  color: #000;
+  height:48px;
+  width:80%;
+}
+
+.textContinue {
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  position: absolute;
+  bottom: 4px;
+  right: 8px;
+
+  height: 0; 
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #000;
+  animation: blinking 1s infinite;
+
+  
+}
+
+
+@keyframes blinking {
+  0% {
+    /* background-color: #06c3d1; */
+    border-top: 8px solid #000;
+  }
+  100% {
+    /* background-color: #270da6; */
+    border-top: 8px solid #fff;
+  }
+}

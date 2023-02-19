@@ -41,8 +41,8 @@ function MyApp({ Component, pageProps }) {
             <div className="">
                 <CustomNav />
                 <main className="min-vh-100">
-                    <div className={'d-flex flex-wrap justify-content-center'}>
-                        <div className={'py-4'}>
+                    <div className={'d-flex min-vh-100 flex-wrap justify-content-center'}>
+                        <div className={'py-4 min-vh-100 col-12 d-flex justify-content-center align-items-center'}>
                             <Component {...pageProps} />
                         </div>
                     </div>
