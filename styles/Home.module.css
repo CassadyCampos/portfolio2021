@@ -78,3 +78,12 @@
 .grayScale {
     filter: grayscale(1);
 }
+
+
+.burntHome {
+    background-color: whiteSmoke;
+}
+
+/* .burntText { 
+    font-family: ;
+} */

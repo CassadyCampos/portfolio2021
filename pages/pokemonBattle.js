@@ -6,7 +6,8 @@ import 'animate.css'
 import React, { useState } from 'react';
 import charizardBack from '../public/pokemon/charizardBack.gif';
 import charizardFront from '../public/pokemon/charizardFront.gif';
-import magikarpBack from '../public/pokemon/margikarpBack.gif';
+import magikarpBack from '../public/pokemon/MagikarpBack.gif';
+import magikarpAttack from '../public/pokemon/magikarpAttack.gif';
 import { ProgressBar } from 'react-bootstrap';
 
 const PokemonBattle = ({ }) => {
@@ -15,22 +16,27 @@ const PokemonBattle = ({ }) => {
         chooseAction: 1,
         chooseAttack: 2,
         playerAttack: 3,
+        cassadyAttack: 4,
+        playerAttack2: 5,
+        playerPokemonLose: 6,
     }
     const charizard = {
         name: "Charizard",
         currentHealth: 100,
         health: 100,
-        image: charizardFront
+        image: charizardFront,
+        imageAttack: charizardFront,
     }
-    const margikarp = {
+    const Magikarp = {
         name: "Magikarp",
         currentHealth: 100,
         health: 100,
-        image: magikarpBack
+        image: magikarpBack,
+        imageAttack: magikarpAttack
     }
     const [isBattling, setIsBattling] = useState(false);
     const [battlePhase, setBattlePhase] = useState(BattlePhases.cassadySendsOutPokemon);
-    const [playerPokemon, setPlayerPokemone] = useState(margikarp);
+    const [playerPokemon, setPlayerPokemone] = useState(Magikarp);
     const [cassadyPokemon, setCassadyPokemon] = useState(charizard);
 
     const promptForBattle = () => {
@@ -49,10 +55,25 @@ const PokemonBattle = ({ }) => {
     }
 
     function getAttackPrompt() {
+        cassadyPokemon.currentHealth -= 25;
         setBattlePhase(BattlePhases.playerAttack)
     }
 
+    function getImage(pokemon) {
+        console.log("pokemon: " + pokemon.name);
+        console.log("pokemon: " + pokemon.imageAttack);
+        switch(battlePhase) {
+            case battlePhase == BattlePhases.playerAttack:
+                return playerPokemon.imageAttack;
+            
+            default:
+                return playerPokemon.image;
+        }
+    }
+
     const renderPokemon = () => {
+        var image = getImage(playerPokemon);
+        console.log("image : " + image.toString());
         return (
             <div className=''>
                 <div className='col-12 d-flex justify-content-end'>
@@ -72,7 +93,7 @@ const PokemonBattle = ({ }) => {
                 <div className="col-12 my-2">
                     <Image
                         className=""
-                        src={playerPokemon.image}
+                        src={battlePhase == BattlePhases.playerAttack ? playerPokemon.imageAttack : playerPokemon.image}
                         alt="Charizard sprite animation"
                         width={120}
                         height={96}
@@ -87,7 +108,7 @@ const PokemonBattle = ({ }) => {
     }
 
     const initBattle = () => {
-        console.log("Test " + battlePhase); 
+        console.log("battlePhase " + battlePhase); 
         if (battlePhase == BattlePhases.cassadySendsOutPokemon) {
             return (
                 <div className='d-flex flex-wrap'>
@@ -113,7 +134,7 @@ const PokemonBattle = ({ }) => {
                     <div className={pStyles.bubbleWrap1} >
                         <div className={pStyles.bubbleWrap2} >
                             <div className={pStyles.bubbleLinkWrap}>
-                                <div onClick={playerAttackFinished} className={pStyles.bubbleLink}>Margikarp used Splash</div>
+                                <div onClick={playerAttackFinished} className={pStyles.bubbleLink}>Magikarp used Splash</div>
                             </div>
                             <span className={pStyles.textContinue}></span>
                         </div>
@@ -123,13 +144,81 @@ const PokemonBattle = ({ }) => {
             )       
         }
 
+        if (battlePhase == BattlePhases.cassadyAttack) {
+            return (
+                <div className='d-flex flex-wrap'>
+                <div className='col-12 my-5 d-flex justify-content-center align-items-center'>
+                    <div className={pStyles.bubbleWrap1} >
+                        <div className={pStyles.bubbleWrap2} >
+                            <div className={pStyles.bubbleLinkWrap}>
+                                <div onClick={cassadyAttackFinished} className={pStyles.bubbleLink}>Charizard used flamethrower!</div>
+                            </div>
+                            <span className={pStyles.textContinue}></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            )
+        }
+
+        if (battlePhase == BattlePhases.playerAttack2) {
+            return (
+                <div className='d-flex flex-wrap'>
+                <div className='col-12 my-5 d-flex justify-content-center align-items-center'>
+                    <div className={pStyles.bubbleWrap1} >
+                        <div className={pStyles.bubbleWrap2} >
+                            <div className={pStyles.bubbleLinkWrap}>
+                                <div onClick={playerAttack2Finished} className={pStyles.bubbleLink}>Magikarp used Tackle</div>
+                            </div>
+                            <span className={pStyles.textContinue}></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ) 
+        }
+
+        if (battlePhase == BattlePhases.cassadyAttack2) {
+            return (
+                <div className='d-flex flex-wrap'>
+                <div className='col-12 my-5 d-flex justify-content-center align-items-center'>
+                    <div className={pStyles.bubbleWrap1} >
+                        <div className={pStyles.bubbleWrap2} >
+                            <div className={pStyles.bubbleLinkWrap}>
+                                <a href="/index2" className={pStyles.bubbleLink}>Charizard used Fire blast</a>
+                            </div>
+                            <span className={pStyles.textContinue}></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ) 
+        }
+
+        if (battlePhase == BattlePhases.playerPokemonLose) {
+            return (
+                <div className='d-flex flex-wrap'>
+                <div className='col-12 my-5 d-flex justify-content-center align-items-center'>
+                    <div className={pStyles.bubbleWrap1} >
+                        <div className={pStyles.bubbleWrap2} >
+                            <div className={pStyles.bubbleLinkWrap}>
+                                <div onClick={playerPokemonLose} className={pStyles.bubbleLink}>Magikarp Fainted!</div>
+                            </div>
+                            <span className={pStyles.textContinue}></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            ) 
+        }
+
         return (
             <div className='d-flex flex-wrap'>
                 <div className='col-12 my-5 d-flex justify-content-center align-items-center'>
                     <div className={pStyles.bubbleWrap1} >
                         <div className={pStyles.bubbleWrap2} >
                             <div className={pStyles.bubbleLinkWrap}>
-                                <div onClick={playerAttackFinished} className={pStyles.bubbleLink}>Margikarp used Splash</div>
+                                <div onClick={playerAttackFinished} className={pStyles.bubbleLink}>Unknown state error, oopsies!</div>
                             </div>
                             <span className={pStyles.textContinue}></span>
                         </div>
@@ -140,9 +229,27 @@ const PokemonBattle = ({ }) => {
     }
 
     function playerAttackFinished() {
-        setBattlePhase();
+        playerPokemon.currentHealth -= 90;
+        setBattlePhase(BattlePhases.cassadyAttack);
     }
 
+    function playerAttack2Finished() {
+        cassadyPokemon.currentHealth -= 5;
+        setBattlePhase(BattlePhases.cassadyAttack2);
+    }
+
+    function cassadyAttackFinished() {
+        setBattlePhase(BattlePhases.playerAttack2);
+    }
+
+    function cassadyAttack2Finished() {
+        playerPokemon.currentHealth = 0;
+        setBattlePhase(BattlePhases.playerPokemonLose);
+    }
+
+    function playerPokemonLose() {
+        alert("finished");
+    }
 
     function startBattle() {
         setIsBattling(true);
