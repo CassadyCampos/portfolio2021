@@ -58,6 +58,10 @@
   padding-left: 6px;
 }
 
+.bubbleTest {
+  text-decoration: none;
+}
+
 .bubbleLinkWrap {
   display: block;
   position: absolute;
