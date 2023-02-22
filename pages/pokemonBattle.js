@@ -6,7 +6,7 @@ import 'animate.css'
 import React, { useState } from 'react';
 import charizardBack from '../public/pokemon/charizardBack.gif';
 import charizardFront from '../public/pokemon/charizardFront.gif';
-import magikarpBack from '../public/pokemon/MagikarpBack.gif';
+import magikarpBack from '../public/pokemon/magikarpBack.gif';
 import magikarpAttack from '../public/pokemon/magikarpAttack.gif';
 import charizardAttack from '../public/pokemon/charizardAttack.gif';
 import charizardFireBomb from '../public/pokemon/charizardFireBomb.gif';
