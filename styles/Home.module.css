@@ -1,6 +1,11 @@
 .baseFont {
     font-family: 'Arbutus Slab', serif;
     color: #373737;
+    text-transform: lowercase;
+}
+
+.toLower {
+    text-transform: lowercase;
 }
 
 .largeFont {

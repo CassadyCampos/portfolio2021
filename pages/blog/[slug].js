@@ -14,7 +14,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
         <div className={styles.wrapper + " mt-4 mx-5 "}>
             <h1
                 className={
-                    styles.baseFont +
+                    styles.baseFont + ' ' + styles.toLower + 
                     ' display-4 py-4 text-center animate__animated animate__slideInUp'
                 }
             >

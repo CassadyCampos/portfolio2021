@@ -10,6 +10,10 @@
 
 }
 
+.toLower {
+  text-transform: lowercase;
+}
+
 .baseText {
   font-size: 1.20rem;
   line-height:34px;
@@ -20,7 +24,7 @@
     display: grid;
     grid-template-columns:
       1fr
-      min(70ch, 100%)
+      min(80ch, 100%)
       1fr;
   }
   .wrapper > * {
