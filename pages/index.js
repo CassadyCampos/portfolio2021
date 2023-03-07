@@ -94,7 +94,7 @@ export default function Home({ posts }) {
                                 />
                             </a>
                         </div>
-                        <div className="col-12 col-sm-2">
+                        {/* <div className="col-12 col-sm-2">
                             <a
                                 href={'/pokemonBattle'}
                             >
@@ -106,7 +106,7 @@ export default function Home({ posts }) {
                                     height={78}
                                 />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </main>
