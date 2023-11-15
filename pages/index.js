@@ -48,14 +48,14 @@ export default function Home({ posts }) {
                     >
                         Calgary, AB, Canada
                     </div>
-                    <div
+                    {/* <div
                         className={
                             styles.baseText + 
                             ' animate__animated animate__fadeInRightBig animate__slower text mt-3'
-                        }
+                       }
                     >
-                        I like to build things, read things, and write things!
-                    </div>
+                        !
+                    </div> */}
                     <div className="d-flex flex-wrap mt-4 animate__animated animate__fadeInRightBig animate__slower">
                         <div className="col-2">
                             <a
@@ -94,7 +94,7 @@ export default function Home({ posts }) {
                                 />
                             </a>
                         </div>
-                        {/* <div className="col-12 col-sm-2">
+                        <div className="col-12 col-sm-2">
                             <a
                                 href={'/pokemonBattle'}
                             >
@@ -106,7 +106,7 @@ export default function Home({ posts }) {
                                     height={78}
                                 />
                             </a>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </main>

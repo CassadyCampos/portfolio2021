@@ -1,0 +1,76 @@
+---
+title: "I Started Using Docker: Here's My Thoughts"
+date: 'May 20th, 2023'
+description: "I never understood the hype around docker. Until I started using it."
+thumbnailUrl: '/brain-power.gif'
+tags: ['software', 'docker']
+postId: 10
+---
+
+### 
+My understanding of docker before actually learning it was thinking it was some software that allowed you 
+to run code in. And for solving the cliche "it works on my machine" problem.
+At it's core, that's essentially what it is. After getting a chance to use docker in a real project I realized it's use cases.
+
+
+
+
+### My thoughts on it
+
+- There's definitely a learning curve to it. It requires an understanding of how to construct yaml files, as
+well as dockerfiles. Given that new developers already have front-end, and back-end functionalities to learn this probably 
+wouldn't be your top priority for learning. It is still a great tool to have once you learn it and it's use cases.
+
+It's use cases
+- Docker is great for setting up what is known as your 'local development environment'. This is the what developers
+use to write and test their code before it goes to the next stage of the development process. 
+- What docker provides is a way for developers to have a consistent environment to work in. This is important because computers can vary wildly as we know.
+
+Have you ever used a Mac after only using Windows? It's a completely different experience. Sometimes even on the same operating system can differ
+i.e you can have different file paths on your computer than someone else. Environment variables that are set on your computer will
+be different than someone else's.
+Docker let's us define the OS the container will run in, the packages that will be installed, their paths, and the environment variables that will be set.
+Everything is mostly pre-defined before the container is even built. Which effectively allows everyone who uses it to have 'the same environment'.
+
+
+---
+
+### Embracing Docker: The Good, The Bad, and The Hilarious
+
+**May 20th, 2023**
+
+Remember that time you started learning Spanish because your crush was from Spain, only to discover that they'd moved to France last month? Yeah, that's how I felt when I first got introduced to Docker. 
+
+**Diving into the Docker**
+
+I'd heard the name Docker thrown around in development circles, like a secret club password. So naturally, my curiosity got the best of me, and I decided to take the plunge. 
+
+Initially, Docker felt like an over-hyped version of a food delivery app, but for code (instead of pizza). However, as I kept digging, I found Docker to be more of a fancy lunchbox for my code, neatly packing everything (code, runtime, libraries, and system tools) in one place. 
+
+**Docker: The Charming Knight**
+
+Now, let's talk about Docker's shining qualities, those that make developers swoon and applications run smoothly.
+
+1. **"It works on my machine":** Docker swoops in to save the day, eliminating the infamous "it works on my machine" problem. Its consistency in running applications across various environments is like having your favorite pizza taste the same, no matter which city you're in. Pretty neat, huh?
+
+2. **"Play well with others":** Docker's approach encourages a microservices architecture where each service gets its own sandbox to play in. This modularity reduces the risk of toddler-like tantrums between different parts of your code, leading to peace (and productivity) in the development realm.
+
+3. **"Be like water":** Docker containers are like Bruce Lee's famous quote; they adapt to any system that supports Docker. The freedom to seamlessly move and run your application on different operating systems is a bit like traveling without needing a visa.
+
+4. **"Efficiency is key":** Docker doesn't run a full-blown OS for each container, meaning it won't drain your system resources faster than a toddler with an open bag of candy. Instead, Docker shares the host system's OS kernel, making it lightweight and speedy.
+
+**The Docker Dilemma: There's No Such Thing as a Free Lunch**
+
+As I familiarized myself with Docker, I discovered that it wasn't all roses and rainbows. There were some prickly thorns and rainy days too.
+
+1. **The Learning Curve:** Docker comes with a steep learning curve. Picture learning to ride a unicycle while juggling flaming torches, and you've got an idea of what to expect. But fear not! With perseverance, and maybe a little caffeine, it's totally doable.
+
+2. **Security Concerns:** Docker's shared kernel model does come with some security risks. If a user with bad intentions gets root access to a container, it's akin to a fox getting into a henhouse. Not pretty.
+
+3. **Resource Wastage:** If not managed well, Docker can eat up system resources like a teenager after football practice. Unused containers and images can pile up, taking up valuable disk space.
+
+**Final Thoughts: To Docker or Not to Docker?**
+
+After my journey with Docker, I realized that while it's a powerful tool with tremendous potential, it's not a magic wand. It's a bit like adopting a puppy - full of potential joy and usefulness, but it also requires time, care, and clean-up.
+
+For anyone on the fence about Docker, consider your project's needs, your team's expertise, and your willingness to tackle the learning curve. But don't forget to have a little fun along the way. Who knows, you might just find that Docker is the missing piece in your development puzzle!
