@@ -115,23 +115,19 @@ export default function Home({ posts }) {
                                 <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2021 I graduated studying Computer Science in Alberta, Canada."}
+                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was also working to build a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of 200k+ retail gas locations across the United States and Canada."}
             </div>
-        <br/>
+            <br/>
+            <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"I built a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of retail gas locations across the United States and Canada."}
+                {"In 2022, I was apart of a team building a mobile application that connects 250+ School Districts in the United States. The app improved communication with parents, enabling group messaging, calling, and direct updates from teachers about personalized student progress."}
             </div>
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2022, I was apart of a team building a mobile application that connects 200 School Districts in the United States. The app improved coommunication with parents, enabling group messaging, calling, and direct updates from teachers about personalized sutdents' progress."}
-            </div>
-            <br/>
-
-            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS containerized it with Docker. I Levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I helped shipped multiple production deployments of an Oil "
-                + " I also grabbed an AWS solutions architect certificate. I wanted to learn more about how to build large-scale distrubted system in the cloud."}
+                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS and containerized it with Docker. I levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I shipped multiple features for another Oil "
+                + " & Gas firm in Alberta for business-critical procedures and reporting. I also grabbed an AWS solutions architect certificate. I wanted to learn more about how to build large-scale distrubted system in the cloud."}
             </div>
             <br/>
 
