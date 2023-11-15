@@ -9,6 +9,7 @@ import 'animate.css';
 import github from '../public/githubgif.gif';
 import linkedIn from '../public/linkedIn2.gif';
 import pokemon from '../public/pokemon.gif';
+import textStyles from "../styles/TextStyles.module.css";
 
 import React, { useState } from 'react';
 
@@ -26,16 +27,17 @@ export default function Home({ posts }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main className="d-flex  px-5">
+            <main className={
+                 " d-flex  mx-5"}>
                 <div
                     id="home"
                     className="d-flex  flex-column text-left justify-content-center"
-                    style={{ height: 'calc(85vh - 150px)' }}
+                    // style={{ height: 'calc(85vh - 150px)' }}
                 >
                     <h1
                         className={
                             styles.mainTitle + 
-                            ' animate__animated animate__fadeInRightBig animate__slow'
+                            ' text-center animate__animated animate__fadeInRightBig animate__slow'
                         }
                     >
                         Software Developer
@@ -43,21 +45,13 @@ export default function Home({ posts }) {
                     <div
                         className={
                             styles.subTitle +
-                            ' animate__animated animate__fadeInRight animate__slower'
+                            ' text-center animate__animated animate__fadeInRight animate__slower'
                         }
                     >
                         Calgary, AB, Canada
                     </div>
-                    {/* <div
-                        className={
-                            styles.baseText + 
-                            ' animate__animated animate__fadeInRightBig animate__slower text mt-3'
-                       }
-                    >
-                        !
-                    </div> */}
-                    <div className="d-flex flex-wrap mt-4 animate__animated animate__fadeInRightBig animate__slower">
-                        <div className="col-2">
+                    <div className="d-flex flex-wrap justify-content-center mt-4 animate__animated animate__fadeInRightBig animate__slower">
+                        <div className="mx-2">
                             <a
                                 href={'https://github.com/CassadyCampos'}
                                 target="_blank"
@@ -75,7 +69,7 @@ export default function Home({ posts }) {
                             </a>
                         </div>
 
-                        <div className="col-2">
+                        <div className="mx-2">
                             <a
                                 href={
                                     'https://www.linkedin.com/in/cassady-campos-2915531a9/'
@@ -94,7 +88,7 @@ export default function Home({ posts }) {
                                 />
                             </a>
                         </div>
-                        <div className="col-12 col-sm-2">
+                        {/* <div className="col-12 col-sm-2">
                             <a
                                 href={'/pokemonBattle'}
                             >
@@ -106,8 +100,47 @@ export default function Home({ posts }) {
                                     height={78}
                                 />
                             </a>
-                        </div>
+                        </div> */}
                     </div>
+
+                    {/* <div
+                        className={
+                            styles.baseText + 
+                            ' animate__animated animate__fadeInRightBig animate__slower text mt-3'
+                       }
+                    >
+                        !
+                    </div> */}
+                    <div>
+                                <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
+            
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"In 2021 I graduated studying Computer Science in Alberta, Canada."}
+            </div>
+        <br/>
+
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"I built a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of retail gas locations across the United States and Canada."}
+            </div>
+            <br/>
+
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"In 2022, I was apart of a team building a mobile application that connects 200 School Districts in the United States. The app improved coommunication with parents, enabling group messaging, calling, and direct updates from teachers about personalized sutdents' progress."}
+            </div>
+            <br/>
+
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS containerized it with Docker. I Levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I helped shipped multiple production deployments of an Oil "
+                + " I also grabbed an AWS solutions architect certificate. I wanted to learn more about how to build large-scale distrubted system in the cloud."}
+            </div>
+            <br/>
+
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"Currently I'm learning how to leverage ChatGPT and automation to simplify simple tasks."}
+            </div>
+        </div>
+                    </div>
+
                 </div>
             </main>
         </div>

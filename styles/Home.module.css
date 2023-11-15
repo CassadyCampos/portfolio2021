@@ -18,6 +18,14 @@
     font-size: 1.2rem !important;
 }
 
+.blackout {
+    background-color: 
+    /* rgb(102 184 252) */
+    rgb(102 184 252);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
 .baseText { 
     font-family: 'Arbutus Slab', serif;
     color: #373737;

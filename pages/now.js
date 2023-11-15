@@ -18,7 +18,13 @@ const Now = () => {
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In the first half of 2022, I completed a mobile application that connects 200+ School Districts across the Eastern United States with parents. Allowing them to perform group messaging, calling, and recieve updates on how their child is doing in school directly from their teacher within the app."}
+                {"In 2022, I was apart of a team building a mobile application that connects 200 School Districts in the United States. The app improved coommunication with parents, enabling group messaging, calling, and direct updates from teachers about personalized sutdents' progress."}
+            </div>
+            <br/>
+
+            <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
+                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS containerized it with Docker. I Levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I helped shipped multiple production deployments of an business-critical Oil "
+                + " & Gas firm here in Alberta using technologies such as .NET, JQuery and Azure."}
             </div>
             <br/>
 
