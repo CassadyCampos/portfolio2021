@@ -12,7 +12,7 @@ const Posts = ({ posts }) => {
             <h1 className={styles.baseFont + " display-4 py-4 text-center animate__animated animate__fadeInRightBig animate__slower"}>posts</h1>
             <div>
                 {posts.map((post, index) => (
-                    <Link href={'/blog/' + post.slug} passHref key={index}
+                    <Link className={styles.noUnderline}href={'/blog/' + post.slug} passHref key={index}
                     >
                         <div className={styles.postLink + " m-4"}> 
                             <div className={styles.baseText + ' ' + styles.fadeIn + ' animate__animated animate__fadeInRightBig animate__slow'}>

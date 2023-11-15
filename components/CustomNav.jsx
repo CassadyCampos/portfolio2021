@@ -16,7 +16,7 @@ class CustomNav extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto mx-2">
-                            <Nav.Link href="/now" className={styles.navLink}>Now</Nav.Link>
+                            {/* <Nav.Link href="/now" className={styles.navLink}>Now</Nav.Link> */}
                             <Nav.Link href="/posts" className={styles.navLink}>Posts</Nav.Link>
                             {/* <Nav.Link href="/projects" className={styles.navLink}>Projects</Nav.Link> */}
                         </Nav>
