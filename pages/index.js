@@ -115,13 +115,13 @@ export default function Home({ posts }) {
                                 <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was also working to build a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of 200k+ retail gas locations across the United States and Canada."}
+                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was also working to build a CRM web app for prominent figures in the Oil and Energy sector that monitored the logistics of fuel deliveries, customer trends, and product levels of 200k+ retail gas locations across the United States and Canada."}
             </div>
             <br/>
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2022, I was apart of a team building a mobile application that connects 250+ School Districts in the United States. The app improved communication with parents, enabling group messaging, calling, and direct updates from teachers about personalized student progress."}
+                {"In 2022, I was apart of a team building a Flutter mobile application that connected 250+ School Districts in the United States. The app improved communication with parents, enabling group messaging, calling, and direct updates from teachers about personalized student progress."}
             </div>
             <br/>
 
