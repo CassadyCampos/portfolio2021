@@ -121,7 +121,7 @@ export default function Home({ posts }) {
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2022, I was apart of a team building a mobile application that connects 250+ School Districts in the United States. The app improved communication with parents, enabling group messaging, calling, and direct updates from teachers about personalized student progress."}
+                {"In 2022, I was apart of a team building a Flutter mobile application that connected 250+ School Districts in the United States. The app improved communication with parents, enabling group messaging, calling, and direct updates from teachers about personalized student progress."}
             </div>
             <br/>
 
