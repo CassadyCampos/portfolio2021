@@ -115,7 +115,7 @@ export default function Home({ posts }) {
                                 <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was also working to build a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of 200k+ retail gas locations across the United States and Canada."}
+                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was also working to build a CRM web app for prominent figures in the Oil and Energy sector that monitors the logistics of fuel deliveries, products, and the statuses of 10,000 retail gas locations across the United States and Canada."}
             </div>
             <br/>
             <br/>
