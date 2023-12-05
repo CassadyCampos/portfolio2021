@@ -31,21 +31,20 @@ const Posts = ({ posts }) => {
 
 export const getStaticProps = async () => {
     const files = fs.readdirSync(path.join('posts'));
-    console.log(typeof files)
     const posts = files.map((filename) => {
-        // console.log(typeof filename)
         const markdownWithMeta = fs.readFileSync(
             path.join('posts', filename),
             'utf-8'
         );
+
         const { data: frontMatter } = matter(markdownWithMeta);
         return {
             frontMatter,
-            slug: filename.split('.')[0],
+            slug: filename,
         };
     });
 
-    posts.sort((a, b) => a.frontMatter.postId > b.frontMatter.postId ? -1 : 1 );
+    posts.sort((a, b) => a.slug.split('.')[0] > b.slug.split('.')[0] ? -1 : 1 );
 
     return {
         props: {

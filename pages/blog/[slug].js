@@ -44,9 +44,6 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                 </div>
                 <div className ={styles.sideWrap + " col-2 d-flex flex-wrap"}>
                 {sidePics ?     sidePics.map((url, index) => {
-                    console.log("url : ", url)
-                    const className = index % 2 === 0 ? '   smallImage smallLeft' : 'smallRight';
-
                     return (
                         <Image
                             src={url}
@@ -65,10 +62,10 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
 };
 export const getStaticPaths = async () => {
     const files = fs.readdirSync(path.join('posts'));
-
     const paths = files.map((filename) => ({
         params: {
-            slug: filename.replace('.mdx', ''),
+            // slug: filename.replace('.mdx', ''),
+            slug: filename,
         },
     }));
 
@@ -80,7 +77,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
     const markdownWithMeta = fs.readFileSync(
-        path.join('posts', slug + '.mdx'),
+        path.join('posts', slug),
+        // path.join('posts', slug + '.mdx'),
         'utf-8'
     );
 
