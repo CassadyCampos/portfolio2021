@@ -9,9 +9,9 @@ import styles from '../../styles/TextStyles.module.css';
 import Image from 'next/image';
 import 'animate.css'
 
-const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => {
+const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSource }) => {
     return (
-        <div className={styles.wrapper + " mt-4 mx-5 "}>
+        <div className={styles.wrapper + " ccc mt-4 mx-5 "}>
             <h1
                 className={
                     styles.baseFont + ' ' + styles.toLower + 
@@ -38,7 +38,14 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
                     components={{ Button, SyntaxHighlighter }}
                 />
                 </div>
-
+                <Image
+                    src={sidePics}
+                    className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
+                    alt="thumbnail"
+                    width={340}
+                    height={220}
+                    objectFit="cover"
+                />
             </div>
         </div>
     );
