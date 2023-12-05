@@ -6,7 +6,7 @@
 
 .smallImage {
   right: -100px;
-  position: fixed;
+  position: relative;
   bottom: -4%;
 }
 

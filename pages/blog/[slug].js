@@ -11,10 +11,10 @@ import 'animate.css'
 
 const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSource }) => {
     return (
-        <div className={styles.wrapper + " ccc mt-4 mx-5 "}>
+        <div className={styles.wrapper + " mt-4 mx-5 "}>
             <h1
                 className={
-                    styles.baseFont + ' ' + styles.toLower + 
+                    styles.baseFont + ' ' + styles.toLower +
                     ' display-4 py-4 text-center animate__animated animate__slideInUp'
                 }
             >
@@ -30,22 +30,32 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                     objectFit="cover"
                 />
                 <div className={styles.dateText + ' animate__animated animate__slideInUp'}>{date}</div>
-                <br/>
-                <div className={styles.baseFont + ' ' +  styles.baseText + ' animate__animated animate__slideInUp'}>
-                <MDXRemote
-                    
-                    {...mdxSource}
-                    components={{ Button, SyntaxHighlighter }}
-                />
+                <br />
+                <div className={styles.baseFont + ' ' + styles.baseText + ' animate__animated animate__slideInUp'}>
+                    <MDXRemote
+
+                        {...mdxSource}
+                        components={{ Button, SyntaxHighlighter }}
+                    />
                 </div>
-                <Image
-                    src={sidePics}
-                    className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
-                    alt="thumbnail"
-                    width={340}
-                    height={220}
-                    objectFit="cover"
-                />
+                <div className ="">
+                {    sidePics.map((url, index) => {
+                    console.log("url : ", url)
+                    const className = index % 2 === 0 ? '   smallImage smallLeft' : 'smallRight';
+
+                    return (
+                        <Image
+                        src={url}
+                        key={index}
+                        className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
+                        alt="thumbnail"
+                        width={280}
+                        height={200}
+                        objectFit="cover"
+                    />
+                    )
+                })}
+                </div>
             </div>
         </div>
     );
