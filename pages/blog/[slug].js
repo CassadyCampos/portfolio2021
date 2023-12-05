@@ -39,7 +39,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                     />
                 </div>
                 <div className ="">
-                {    sidePics.map((url, index) => {
+                {sidePics ?     sidePics.map((url, index) => {
                     console.log("url : ", url)
                     const className = index % 2 === 0 ? '   smallImage smallLeft' : 'smallRight';
 
@@ -54,7 +54,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                         objectFit="cover"
                     />
                     )
-                })}
+                }): null}
                 </div>
             </div>
         </div>
