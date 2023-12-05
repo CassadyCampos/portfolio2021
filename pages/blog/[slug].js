@@ -29,6 +29,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl }, mdxSource }) => 
                     height={360}
                     objectFit="cover"
                 />
+
                 <div className={styles.dateText + ' animate__animated animate__slideInUp'}>{date}</div>
                 <br/>
                 <div className={styles.baseFont + ' ' +  styles.baseText + ' animate__animated animate__slideInUp'}>
