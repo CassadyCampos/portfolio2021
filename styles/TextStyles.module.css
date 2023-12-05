@@ -4,10 +4,20 @@
     font-weight: 200;
 }
 
+.sideWrap {
+  position: fixed;
+  top: 10%;
+  right: 0%;
+  height: 90%;
+}
+
 .smallImage {
-  right: -100px;
-  position: relative;
-  bottom: -4%;
+  /* display: inline-block; */
+  width: 90%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+
 }
 
 .sidePics {

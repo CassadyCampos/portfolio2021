@@ -23,6 +23,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
             <div>
                 <Image
                     src={thumbnailUrl}
+                    priority={true}
                     className={styles.fullBleed + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
                     alt="thumbnail"
                     width={1000}
@@ -41,7 +42,7 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                         components={{ Button, SyntaxHighlighter }}
                     />
                 </div>
-                <div className ="">
+                <div className ={styles.sideWrap + " col-2 d-flex flex-wrap"}>
                 {sidePics ?     sidePics.map((url, index) => {
                     console.log("url : ", url)
                     const className = index % 2 === 0 ? '   smallImage smallLeft' : 'smallRight';
@@ -50,15 +51,11 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                         <Image
                             src={url}
                             key={index}
-                            className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
+                            width="0"
+                            height="0"
+                            className={styles.smallImage + " col-12 my-5 img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
                             alt="thumbnail"
-                            width={280}
-                            height={200}
-                            style={{
-                                maxWidth: "100%",
-                                height: "auto",
-                                objectFit: "cover"
-                            }} />
+                            />
                     );
                 }): null}
                 </div>
