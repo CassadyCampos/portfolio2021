@@ -6,7 +6,7 @@ import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import Button from '../../components/Button.jsx';
 import styles from '../../styles/TextStyles.module.css';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import 'animate.css'
 
 const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSource }) => {

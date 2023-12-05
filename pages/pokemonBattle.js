@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import styles from '../styles/Home.module.css';
 import pStyles from '../styles/PokemonBattle.module.css';
 import 'animate.css'
