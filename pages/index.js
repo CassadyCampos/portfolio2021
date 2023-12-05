@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from '../styles/Home.module.css';
 import fs from 'fs';
 import path from 'path';
@@ -63,9 +63,12 @@ export default function Home({ posts }) {
                                     // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                     alt="thumbnail"
                                     width={64}
-                                    height={64}
                                     // objectFit="cover"
-                                />
+                                    height={64}
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
                             </a>
                         </div>
 
@@ -83,9 +86,12 @@ export default function Home({ posts }) {
                                     // className="col-md-8, col-sm-12 img-fluid mt-1 rounded"
                                     alt="thumbnail"
                                     width={64}
-                                    height={64}
                                     // objectFit="cover"
-                                />
+                                    height={64}
+                                    style={{
+                                        maxWidth: "100%",
+                                        height: "auto"
+                                    }} />
                             </a>
                         </div>
                         {/* <div className="col-12 col-sm-2">

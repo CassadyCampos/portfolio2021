@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from '../styles/Home.module.css';
 import pStyles from '../styles/PokemonBattle.module.css';
 import 'animate.css'
@@ -99,7 +99,10 @@ const PokemonBattle = ({ }) => {
                         alt="Charizard sprite animation"
                         width={164}
                         height={174}
-                    />
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                     </div>
     
 
@@ -112,14 +115,17 @@ const PokemonBattle = ({ }) => {
                         alt="Player pokemon sprite animation"
                         width={120}
                         height={96}
-                    />
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                     <div className='col-3'>
                         <ProgressBar now={playerPokemon.currentHealth / playerPokemon.health * 100} />
                         <span>{playerPokemon.currentHealth}/{playerPokemon.health}</span>
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 
     const router = useRouter();

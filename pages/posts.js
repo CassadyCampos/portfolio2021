@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import styles from '../styles/Home.module.css';
 import 'animate.css'
 

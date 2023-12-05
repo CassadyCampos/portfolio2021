@@ -6,7 +6,7 @@ import matter from 'gray-matter';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import Button from '../../components/Button.jsx';
 import styles from '../../styles/TextStyles.module.css';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import 'animate.css'
 
 const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSource }) => {
@@ -27,8 +27,11 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
                     alt="thumbnail"
                     width={1000}
                     height={360}
-                    objectFit="cover"
-                />
+                    style={{
+                        maxWidth: "100%",
+                        height: "auto",
+                        objectFit: "cover"
+                    }} />
                 <div className={styles.dateText + ' animate__animated animate__slideInUp'}>{date}</div>
                 <br />
                 <div className={styles.baseFont + ' ' + styles.baseText + ' animate__animated animate__slideInUp'}>
@@ -45,15 +48,18 @@ const PostPage = ({ frontMatter: { title, date, thumbnailUrl, sidePics }, mdxSou
 
                     return (
                         <Image
-                        src={url}
-                        key={index}
-                        className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
-                        alt="thumbnail"
-                        width={280}
-                        height={200}
-                        objectFit="cover"
-                    />
-                    )
+                            src={url}
+                            key={index}
+                            className={styles.smallImage + " img-fluid mt-1 rounded animate__animated animate__slideInUp full-bleed"}
+                            alt="thumbnail"
+                            width={280}
+                            height={200}
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto",
+                                objectFit: "cover"
+                            }} />
+                    );
                 }): null}
                 </div>
             </div>
