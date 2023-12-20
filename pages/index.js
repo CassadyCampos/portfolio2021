@@ -50,6 +50,14 @@ export default function Home({ posts }) {
                     >
                         Calgary, AB, Canada
                     </div>
+                    <div
+                        className={
+                            styles.subTitle +
+                            ' text-center animate__animated animate__fadeInRight animate__slower'
+                        }
+                    >
+                        Hi Aveva, hosted on Amplify
+                    </div>
                     <div className="d-flex flex-wrap justify-content-center mt-4 animate__animated animate__fadeInRightBig animate__slower">
                         <div className="mx-2">
                             <a
