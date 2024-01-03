@@ -1,0 +1,31 @@
+---
+title: "I forgot how you update Github Access Tokens for Lambda Functions"
+date: "January 2nd, 2024"
+description: "test"
+thumbnailUrl: "/gold_coins.jpg"
+# sidePics: [, "/imgs/bill.webp", "/imgs/chuck.webp"]
+sidePics: ["/imgs/grump.gif", "/imgs/glitter.gif"]
+bottomPics: ['/imgs/southpark.webp']
+stags: ["data", "software"]
+postId: 12
+---
+
+### How to Update Github Access Token for AWS Function
+
+1. On github generate a new access token
+
+- go to settings
+
+- at the bottom go to developer settings
+
+- click that and generate a new token, try and specify minimum requirements you need
+- set the date to a date you wish for it to expire
+
+2. Log into AWS 
+
+- go to AWS Lambda function that is using the token
+
+- it's probably in the environment variables so go to Configuration, then in the new tab
+  click on 'Environment Variables'
+
+- paste in the new variable and test out the function
