@@ -121,26 +121,26 @@ export default function Home({ posts }) {
                                 <div className={textStyles.wrapper + ' mx-5 animate__animated animate__slideInUp'}>
             
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was already working to build a CRM web app for the Oil company 7-11 that collected analytical data of fuel deliveries, and data 10,000 retail gas locations across the United States and Canada."}
+                {"In 2021 I graduated studying Computer Science in Alberta, Canada. In my senior year, I was working to build a CRM web app for 7-11 (Oil & Gas Company) that collected analytical data of fuel deliveries, and data from over 10,000 retail gas locations across the United States and Canada."}
             </div>
             <br/>
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2022, I was apart of a team building a Flutter mobile application that connected 250+ School Districts in the United States. I learned how to implement SMS messaging and VoIP calling capabilities, OAUTH 2.0 secure logins, and Mobile Development practices on both iPhone and Android."}
+                {"In 2022, I was a part of a team building a Flutter mobile application that connected 250+ School Districts in the United States. I learned how to implement OAUTH 2.0 login, SMS messaging, and VoIP calling capabilities. I gained invaluable Mobile Development experience on both iPhone and Android."}
             </div>
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS and containerized it with Docker. I levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I worked as the single developer shipping critical web features for a Oil "
-                + " & Gas companies Upstream monitoring operations. \n\n|"
-                +"This year I achieved an AWS solutions architect certificate. I wanted to learn more about how to build large-scale distrubted system in the cloud."}
+                {"In 2023 I leveled up my Cloud Engineering skills. I migrated a on-premises PHP application to AWS and containerized it with Docker. I levereged services such as ECS, ECR, Elasticache, CloudWatch, Lambda and much more. At the same time, I worked as the single developer shipping critical web features for an Oil "
+                + " & Gas Company that helped them schedule the upstream oil pipeline processes. \n\n"
+                }
             </div>
             <br/>
 
             <div className={styles.baseText + ' my-3 ' + styles.baseFont}>
-                {"In 2024 I joined global Industrial Software solutions Company AVEVA! Putting my knowledge of Software Development, Cloud and DevOps together I am "
-                + " creating software solutions for global companies such as Shell, Starbucks, and Hyundai. While being a Cloud Advisor for AVEVA's Platform as a Service (PaaS) suite of applications."}
+                {"In 2024 I joined global industrial software company AVEVA! Putting my knowledge of Software Development, Cloud and DevOps together I am "
+                + " creating software for enterprise applications used by Fortune 50 companies worldwide."}
             </div>
         </div>
                     </div>
